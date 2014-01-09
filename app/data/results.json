@@ -1,0 +1,87 @@
+﻿[
+    {
+        "resultId" : 1,
+        "resultShortDescription" : "超人",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 2,
+        "resultShortDescription" : "蜘蛛侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 3,
+        "resultShortDescription" : "蝙蝠侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 4,
+        "resultShortDescription" : "钢铁侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 5,
+        "resultShortDescription" : "猫女",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 6,
+        "resultShortDescription" : "神奇女侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 7,
+        "resultShortDescription" : "绿巨人",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 8,
+        "resultShortDescription" : "雷神",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 9,
+        "resultShortDescription" : "Harry",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 10,
+        "resultShortDescription" : "绿灯侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 11,
+        "resultShortDescription" : "金刚狼",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 12,
+        "resultShortDescription" : "黑寡妇",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 13,
+        "resultShortDescription" : "洛基",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 14,
+        "resultShortDescription" : "超杀女",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 15,
+        "resultShortDescription" : "海扁王",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 16,
+        "resultShortDescription" : "绿箭侠",
+		"resultLongDescription" : ""
+    },
+    {
+        "resultId" : 17,
+        "resultShortDescription" : "美国队长",
+		"resultLongDescription" : ""
+    }
+]

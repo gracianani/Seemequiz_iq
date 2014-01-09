@@ -1,0 +1,35 @@
+<div id="sceneInGame" class="scene current">
+        	
+    <section  id="inGame-progressContainer">
+        <div id="inGame-progress-bar">
+        </div>
+        <div id="inGame-progress-value">
+        50%
+        </div>
+        <div id="inGame-progress-startIcon">
+        	<img src="app/img/progress-left.png" />
+        </div>
+        <div id="inGame-progress-endIcon">
+        	<img src="app/img/progress-right.png" />
+        </div>
+    </section><!--inGame-progressContainer-->    
+    
+    <section id="inGame-questionContainer">
+        <div class="question current">
+        	<div class="question-title">
+        		{{questionId}}. {{questionText}}?
+        	</div>
+        	<ul class="question-list">
+                {{#answers}}
+                    <li class="question-item"><a href="">{{answerText}}</a></li>
+                {{/answers}}
+        	</ul>
+        </div>
+    </section><!--inGame-questionContainer-->
+        		
+    <section id="inGame-actionContainer">
+        <a  id="inGame-prev" class="btn btn-red">上一题</a>
+        <a  id="inGame-next" class="btn btn-yellow">下一题</a>
+    </section><!--inGame-actionContainer-->
+        		
+</div><!--sceneInGame-->
