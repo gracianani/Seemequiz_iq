@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Backbone Boilerplate</title>
+  <title>西米测试：你是哪位超级英雄？</title>
   <!-- Application styles. -->
   <!-- build:[href] /styles.min.css -->
   <link rel="stylesheet" href="/app/styles/index.css">
   <!-- /build -->
 </head>
-<body>
+<body ontouchstart="">
   <!-- Application container. -->
-  <main role="main" id="main"></main>
+  <main role="main" id="main">
+      <header id="topBar">
+        <div class="container">
+            <h1><a id="logo"><img src="/app/img/logo.png" alt="Seemeloo"></a>你是哪位超级英雄？</h1>
+        </div>
+        <div class="helpButton">
+        <a href="" class="btn btn-yellow">?</a>
+        </div>
+      </header>
+      <div id="stage" class="container"></div>  
+  </main>
   <!-- Application source. -->
   <!-- build:[src] /source.min.js -->
   <script data-main="/app/main" src="/vendor/bower/requirejs/require.js"></script>
   <!-- /build -->
-  <header id="topBar">
-    <div class="container">
-        <h1><a id="logo"><img src="app/img/logo.png" alt="Seemeloo"></a>你是哪位超级英雄？</h1>
-    </div>
-    <div class="helpButton">
-    <a href="" class="btn btn-yellow">?</a>
-    </div>
-</header>
-  <div id="stage"></div>
+
 </body>
 </html>

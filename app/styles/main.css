@@ -1,0 +1,494 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html,body {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background: url(../img/bodybg.png);
+	min-width: 319px;
+	color: #FFF;
+	font-size: 18px;
+}
+#topBar {
+	height: 47px;
+	width: 100%;
+	position: fixed;
+	top:0;
+	background: url(../img/topbg.png) repeat-x left top;
+	background-size: 32px 47px;
+}
+.container {
+	margin: 5px 10px;
+}
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 37px;
+	margin: 0;
+	padding:0;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000;
+}
+#logo {
+	width: 37px;
+	height:30px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top:-3px;
+}
+.helpButton {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	background-size:50px 50px;
+}
+
+#stage {
+	margin-top: 60px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 28px;
+	line-height: 50px;
+	height: 50px;
+	padding: 5px 20px;
+	
+	box-shadow: 0 10px 0 rgba(0,0,0,0.3);
+	border-radius: 5px;
+	
+}
+.btn-yellow {
+	background: #e7aa00;
+	color: #FFF;
+}
+
+.btn-red {
+	background: #ae2d2d;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000;
+}
+.btn-green {
+	background: #78ab1b;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000;	
+}
+.btn-block {
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+#start-cover {
+	text-align: center;
+}
+#start-action {
+	width: 80%;
+	margin: 0 auto;
+}
+#inGame-progressContainer {
+	position: relative;
+	background: rgba(0,0,0,0.3);
+	border-radius: 20px;
+	height: 30px;
+	padding: 5px 10px;
+	margin:0 20px;
+}
+#inGame-progress-startIcon,#inGame-progress-endIcon {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top:-15px;
+}
+#inGame-progress-startIcon {
+	left: -20px;
+}
+#inGame-progress-endIcon {
+	right: -20px;
+}
+#inGame-progress-bar,#inGame-progress-value {
+	position: absolute;
+}
+#inGame-progress-bar {
+	background: #daa40e;
+	width: 0%;
+	height: 20px;
+	border-radius: 20px;
+	top:10px;
+	background: -webkit-gradient(linear, 0 0, 0 left, from(#daa40e), to(#ffc832));
+	background: -webkit-linear-gradient(left, #daa40e, #ffc832);
+	background: -moz-linear-gradient(left, #daa40e, #ffc832);
+	background: -ms-linear-gradient(left, #daa40e, #ffc832);
+	background: -o-linear-gradient(left, #daa40e, #ffc832);
+	background: linear-gradient(left, #daa40e, #ffc832);
+}
+#inGame-progress-value {
+	color: #daa40e;
+	line-height: 30px;
+	width:100%;
+	text-align: center;
+}
+.question-title {
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 0 #000;
+	padding: 20px 0 10px;
+}
+.question-list,.question-item {
+	margin: 0;
+
+	padding: 0;
+	list-style: none;
+}
+.question-list {
+	box-shadow: 0 10px 0 rgba(0,0,0,0.3);
+	
+}
+.question-item {
+	}
+.question-item:first-child {
+	border-top: 0;
+}
+.question-item {
+	background: #FFF;
+	border-top: 2px solid rgba(0,0,0,0.2);
+	padding: 15px 10px;
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	color: #333;
+	cursor: pointer;
+}
+.question-item.selected,.question-item:hover {
+	background:#c12a2a;
+	color: #FFF;
+}
+#inGame-actionContainer {
+	margin-top: 20px;
+	height: 100px;
+	position: relative;
+}
+#inGame-prev {
+	left: 0;
+	position: absolute;
+}
+#inGame-next {
+	right: 0;
+	position: absolute;
+}
+.result-name {
+	text-align: center;
+	text-shadow: 1px 1px 0 #000;
+	font-size: 24px;
+}
+.result-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	overflow: hidden;
+	box-shadow: 0 10px 0 rgba(0,0,0,0.3);
+	margin: 0 auto;
+}
+.result-quote,.result-text {
+	text-align: center;
+	margin: 10px 0;
+}
+.question,.scene {
+	display: none;
+}
+.question.current,.scene.current {
+	display: block;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

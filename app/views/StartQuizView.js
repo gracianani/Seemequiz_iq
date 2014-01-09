@@ -34,6 +34,9 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html"],
                 return this;
 
             },
+            ready: function() {
+                this.$el.find('#start-action').show();
+            },
 
             startQuiz: function () {
 

@@ -3,7 +3,8 @@
 
     // External dependencies.
     var Backbone = require("backbone");
-
+	var BackboneTouch = require("backbonetouch");
+	var AnimationHandler = require("animationhandler");
     var Questions = require("collections/Questions");
     var UserAnswers = require("collections/UserAnswers");
     var Scorings = require("collections/Scorings");
@@ -13,6 +14,7 @@
     var InQuizView = require("views/InQuizView");
     var StartQuizView = require("views/StartQuizView");
     var EndQuizView = require("views/EndQuizView");
+    var MainView = require("views/MainView");
 
     var questions;
     var userAnswers;
@@ -22,6 +24,7 @@
     var inQuizView;
     var startQuizView;
     var endQuizView;
+    var mainView;
 
     var t;
     // Defining the application router.
@@ -29,6 +32,7 @@
 
         initialize: function () {
             startQuizView = new StartQuizView();
+            mainView = new MainView();
             questions = new Questions();
             questions.fetch();
             results = new Results();
@@ -47,17 +51,22 @@
         prepare: function () {
             if (questions.length !== 0) {
                 clearTimeout(t);
-                startQuizView.render();
+                
             }
         },
 
         index: function () {
             console.log("Welcome to your / route.");
+            startQuizView.render();
             t = setTimeout(this.prepare, 1000);
         },
 
         quiz: function (questionId) {
-            inQuizView = new InQuizView({ model: questions.get(questionId), questions: questions, userAnswers: userAnswers });
+            if ( !questions || questions.size() < 1 ) {
+                Backbone.history.navigate('', { trigger: true, replace: true });
+                return;
+            }
+            inQuizView = new InQuizView({ model: questions.get(questionId).clone(), questions: questions, userAnswers: userAnswers });
         },
 
         result: function () {
