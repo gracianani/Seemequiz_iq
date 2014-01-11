@@ -6,7 +6,10 @@ define(["jquery", "backbone", "models/UserAnswer"],
 
         var UserAnswers = Backbone.Collection.extend({
 
-            model: UserAnswer
+            model: UserAnswer,
+            isAnswered: function(questionId) {
+                return ( this.where({ "questionId": questionId }).length > 0 );
+            }
 
         });
 

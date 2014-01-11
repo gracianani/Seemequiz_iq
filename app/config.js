@@ -17,7 +17,7 @@ require.config({
     "mustache": '../vendor/bower/mustache/mustache',
     "text": "../vendor/bower/text/text",
     "backbonetouch":"../vendor/backbone.touch",
-    "animationhandler":"../vendor/animationHandler"
+    "animationscheduler":"../vendor/animationScheduler"
   },
 
   shim: {

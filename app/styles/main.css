@@ -119,6 +119,7 @@ body {
 	background: url(../img/topbg.png) repeat-x left top;
 	background-size: 32px 47px;
 }
+
 .container {
 	margin: 5px 10px;
 }
@@ -139,7 +140,7 @@ h1 {
 	position: relative;
 	top:-3px;
 }
-.helpButton {
+#topBar-help {
 	position: absolute;
 	right: 10px;
 	top: 0;
@@ -159,6 +160,7 @@ h1 {
 	
 	box-shadow: 0 10px 0 rgba(0,0,0,0.3);
 	border-radius: 5px;
+	cursor: pointer;
 	
 }
 .btn-yellow {
@@ -188,6 +190,11 @@ h1 {
 	width: 80%;
 	margin: 0 auto;
 }
+#start-action.loading {
+	background: url(../img/loader.gif) no-repeat center center;
+	height: 100px;
+}
+
 #inGame-progressContainer {
 	position: relative;
 	background: rgba(0,0,0,0.3);
@@ -244,10 +251,11 @@ h1 {
 	list-style: none;
 }
 .question-list {
-	box-shadow: 0 10px 0 rgba(0,0,0,0.3);
+	
 	
 }
 .question-item {
+box-shadow: 0 10px 0 rgba(0,0,0,0.3);
 	}
 .question-item:first-child {
 	border-top: 0;
@@ -267,8 +275,8 @@ h1 {
 	color: #FFF;
 }
 #inGame-actionContainer {
+	height: 80px;
 	margin-top: 20px;
-	height: 100px;
 	position: relative;
 }
 #inGame-prev {
@@ -296,11 +304,12 @@ h1 {
 	text-align: center;
 	margin: 10px 0;
 }
-.question,.scene {
-	display: none;
-}
+
 .question.current,.scene.current {
 	display: block;
+}
+body, html, #main,#stage,.scene {
+    height: 100%;
 }
 
 /* ==========================================================================

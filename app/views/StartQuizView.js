@@ -1,8 +1,8 @@
 ﻿// StartQuizView.js
 // -------
-define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html"],
+define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html", "animationscheduler"],
 
-    function ($, Backbone, Mustache, template) {
+    function ($, Backbone, Mustache, template, AnimationScheduler) {
 
         var StartQuizView = Backbone.View.extend({
 
@@ -11,7 +11,7 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html"],
 
             // View constructor
             initialize: function () {
-
+                this.listenTo(this, "render", this.postRender);
             },
 
             // View Event Handlers
@@ -29,19 +29,29 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html"],
 
                 // Dynamically updates the UI with the view's template
                 this.$el.html(Mustache.render(this.template));
-
+                
+                this.trigger("render");
+                
                 // Maintains chainability
                 return this;
 
             },
+            postRender: function() {
+                this.sceneAnimationScheduler = new AnimationScheduler(this.$el.find("#sceneStart"));
+                this.buttonAnimationScheduler = new AnimationScheduler(this.$el.find("#start-startButton,#start-shareButton"), {"isSequential":true});
+                
+                this.sceneAnimationScheduler.animateIn();
+            },
             ready: function() {
-                this.$el.find('#start-action').show();
+                var self = this;
+                this.$el.find(".loading").removeClass("loading");
+                this.buttonAnimationScheduler.animateIn();
             },
 
             startQuiz: function () {
-
-                Backbone.history.navigate('question/1', { trigger: true, replace: true }); 
-            
+                this.sceneAnimationScheduler.animateOut(function() {
+                    Backbone.history.navigate("question/1", { trigger: true, replace: true }); 
+                });
             }
 
         });

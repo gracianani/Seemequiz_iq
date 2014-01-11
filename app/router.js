@@ -3,8 +3,7 @@
 
     // External dependencies.
     var Backbone = require("backbone");
-	var BackboneTouch = require("backbonetouch");
-	var AnimationHandler = require("animationhandler");
+    var BackboneTouch = require("backbonetouch");
     var Questions = require("collections/Questions");
     var UserAnswers = require("collections/UserAnswers");
     var Scorings = require("collections/Scorings");
@@ -40,6 +39,7 @@
             userAnswers = new UserAnswers();
             scorings = new Scorings();
             scorings.fetch();
+
         },
 
         routes: {
@@ -51,7 +51,7 @@
         prepare: function () {
             if (questions.length !== 0) {
                 clearTimeout(t);
-                
+                startQuizView.ready();
             }
         },
 
@@ -66,7 +66,7 @@
                 Backbone.history.navigate('', { trigger: true, replace: true });
                 return;
             }
-            inQuizView = new InQuizView({ model: questions.get(questionId).clone(), questions: questions, userAnswers: userAnswers });
+            inQuizView = new InQuizView({ questionId: questionId, questions: questions, userAnswers: userAnswers });
         },
 
         result: function () {

@@ -1,8 +1,8 @@
 ﻿// ToolbarView.js
 // -------
-define(["jquery", "backbone"],
+define(["jquery", "backbone","animationscheduler"],
 
-    function ($, Backbone) {
+    function ($, Backbone, AnimationScheduler) {
 
         var MainView = Backbone.View.extend({
 
@@ -12,13 +12,13 @@ define(["jquery", "backbone"],
             // View constructor
             initialize: function (options) {
                 this.disableSelection();
+                this.helpButtonAnimationScheduler = new AnimationScheduler( this.$el.find("#topBar-help") );
+                this.helpButtonAnimationScheduler.animateIn();
             },
 
             // View Event Handlers
             events: {
-
                 "click #logo": "onClickLogo"
-
             },
 
             onClickLogo: function() {

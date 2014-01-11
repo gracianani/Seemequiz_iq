@@ -1,4 +1,4 @@
-<div id="sceneInGame" class="scene current">
+<div id="sceneInGame" class="scene hidden" data-entranceAnimation="bounceInRight" data-exitAnimation="bounceOutLeft">
         	
     <section  id="inGame-progressContainer">
         <div id="inGame-progress-bar">
@@ -15,19 +15,9 @@
     </section><!--inGame-progressContainer-->    
     
     <section id="inGame-questionContainer">
-        <div class="question current">
-        	<div class="question-title">
-        		{{questionId}}. {{questionText}}?
-        	</div>
-        	<ul class="question-list">
-                {{#answers}}
-                    <li class="question-item">{{answerText}}</li>
-                {{/answers}}
-        	</ul>
-        </div>
     </section><!--inGame-questionContainer-->
         		
-    <section id="inGame-actionContainer">
+    <section id="inGame-actionContainer" class="hidden">
         <a  id="inGame-prev" class="btn btn-red">上一题</a>
         <a  id="inGame-next" class="btn btn-yellow">下一题</a>
     </section><!--inGame-actionContainer-->
