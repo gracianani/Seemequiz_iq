@@ -10,13 +10,9 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             el: "#stage",
 
             // View constructor
-            initialize: function (options) {
-                var self = this;
-                this.questionRepo = options.questions;
-                this.userAnswers = options.userAnswers;
-                this.currentQuestionId = options.questionId;
-                
-                //this.listenTo(this.model, "change", this.render);
+            initialize: function () {
+                            
+                this.listenTo(this.model, "change", this.onModelChange);
                 this.listenTo(this, "render", this.postRender);
 
                 this.render();
@@ -47,99 +43,102 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 return this;
 
             },
+            
             postRender: function() {
                 var self = this;
+                this.initQuestionView();
+                this.updateProgress();
+                this.updateActionButton();
                 this.sceneAnimationScheduler = new AnimationScheduler($('#sceneInGame'));
+                this.progressAnimationScheduler = new AnimationScheduler($('#inGame-progress-startIcon,#inGame-progress-endIcon'));
+                this.actionBarAnimationScheduler = new AnimationScheduler($('#inGame-actionContainer'));
                 this.sceneAnimationScheduler.animateIn(function() {
-                    self.updateQuestionView();
+                    self.progressAnimationScheduler.animateIn(function(){
+                        self.questionView.render();
+                    });
                 });
+                this.updateActionButton();
             },
+            
             showPreviousQuestion: function () {
-                if (!this.isFirstQuestion()) {
-                    this.currentQuestionId--;
-                    this.updateQuestionView();
-                    Backbone.history.navigate('question/' + this.currentQuestionId, { trigger: false, replace: true });
+                if (!this.model.isFirstQuestion()) {
+                    this.model.goToPreviousQuestion();
                 }
             },
 
             showNextQuestion: function () {
-                if (!this.isLastQuestion()) {
-                    this.currentQuestionId++;
-                    this.updateQuestionView();
-                    Backbone.history.navigate('question/' + this.currentQuestionId, { trigger: false, replace: true });
+                if (!this.model.isLastQuestion()) {
+                    this.model.goToNextQuestion();
                 }
                 else {
-                    Backbone.history.navigate('result', { trigger: true, replace: true });
+                    var self = this;
+                    this.$el.find('#inGame-progress-bar').animate({'width': '99%'});
+                    this.progressAnimationScheduler.animateOut(function(){
+                        self.sceneAnimationScheduler.animateOut(function() {
+                            Backbone.history.navigate("result", { trigger: true, replace: true }); 
+                        });
+                    });
+                    
                 }
             },
+                     
+            onClickQuestionItem: function(e) {
+                this.model.processUserAnswer();
+                this.updateActionButton();
+                this.showNextQuestion();
+            },
+            
+            onQuestionAnimateComplete: function() {
 
-            processUserAnswer: function () {
-                if (this.userAnswers.isAnswered(this.currentQuestionId)) {
-                    this.userAnswers.remove( this.userAnswers.where({ "questionId": this.currentQuestionId }));
-                }
-                this.userAnswers.add({ "questionId": this.currentQuestionId, "answerId": 1 });
-                console.log(this.userAnswers.toJSON());
             },
-
-            isFirstQuestion: function () {
-                if (this.questionRepo.first().get("questionId") == this.currentQuestionId) {
-                    return true;
-                }
-                return false;
-            },
-
-            isLastQuestion: function () {
-                if (this.questionRepo.last().get("questionId") == this.currentQuestionId) {
-                    return true;
-                }
-                return false;
-            },
-            onClickQuestionItem: function() {
-                this.processUserAnswer();
+            
+            onModelChange: function(){
+                this.updateQuestionView();
+                Backbone.history.navigate('question/' + this.model.get("currentQuestionId"), { trigger: false, replace: true });
+                this.updateProgress();
                 this.updateActionButton();
             },
-            onQuestionAnimateComplete: function() {
-                this.$el.find("#inGame-actionContainer").removeClass("hidden");
-            },
+            
             updateProgress: function() {
-                var percent = 10;
-                if ( this.userAnswers && this.questionRepo && this.questionRepo.size() ) {
-                    percent = Math.floor( ( ( this.userAnswers.length + 1 ) / this.questionRepo.size() ) * 100 );
-                }
+                this.$el.find('#inGame-progress-value').html(this.model.get("currentQuestionId") + ' / ' + this.model.getQuestionsCount());
+                this.$el.find('#inGame-progress-bar').animate({'width': this.model.get("progress") + '%'});
                 
-                this.$el.find('#inGame-progress-value').html(percent + '%');
-                this.$el.find('#inGame-progress-bar').css('width', percent + '%');
-                
-                if ( percent > 45 ) {
+                if ( this.model.get("progress") > 45 ) {
                     this.$el.find('#inGame-progress-value').css('color','white');
                 }
             },
-            updateQuestionView: function(){
-                var question = this.questionRepo.get(this.currentQuestionId);
-                if ( !this.questionView ) {
-                    this.questionView = new QuestionView({ model : question.clone() });
-                    this.listenTo(this.questionView, "animateComplete", this.onQuestionAnimateComplete);
-                    this.questionView.render();
-                } else {
-                    this.questionView.model.set(question.toJSON());
-                }
-                
-                this.updateProgress();
-                this.$el.find("#inGame-actionContainer").addClass("hidden");
-                this.updateActionButton();
+            
+            initQuestionView: function() {
+                this.questionView = new QuestionView({ model : this.model.getCurrentQuestion() });
+                this.listenTo(this.questionView, "animateComplete", this.onQuestionAnimateComplete);
             },
+            
+            updateQuestionView: function(){
+                this.questionView.model.set( this.model.getCurrentQuestion().toJSON() );
+            },
+            
             updateActionButton: function(){
-                if ( this.userAnswers.isAnswered(this.currentQuestionId) ) {
-                    this.$el.find("#inGame-next").show();
+                var next = this.$el.find("#inGame-next");
+                var prev = this.$el.find("#inGame-prev");
+                
+                if ( this.model.isCurrentQuestionAnswered() ) {
+                    prev.show();
+                    if ( this.$el.find("#inGame-actionContainer").hasClass("hidden") ) {
+                        this.actionBarAnimationScheduler.animateIn();
+                    }
                 } else {
-                    this.$el.find("#inGame-next").hide();
+                    next.hide();
                 }
                 
-                if ( this.isFirstQuestion() ) {
-                    this.$el.find("#inGame-prev").hide();
+                if ( this.model.isFirstQuestion() ) {
+                    prev.hide();
                 } else {
-                    this.$el.find("#inGame-prev").show();
+                    next.show();
+                    if ( this.$el.find("#inGame-actionContainer").hasClass("hidden") ) {
+                        this.actionBarAnimationScheduler.animateIn();
+                    }
                 }
+                
             }
         });
 

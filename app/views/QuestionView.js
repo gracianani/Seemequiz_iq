@@ -44,12 +44,16 @@ define(["jquery", "backbone", "mustache", "text!templates/Question.html", "anima
             },
             postRender: function() {
                 var self = this;
+                if ( this.model.get("answerId") > 0 ) {
+                    this.$el.find("[data-id='" + this.model.get("answerId") + "']").addClass("selected");
+                }
                 
                 this.answerItemAnimationScheduler = new AnimationScheduler(
                     this.$el.find(".question-title,.question-item"),
                     {
                         "isSequential":true,
-                        "defaultEntrance":"flipInX"
+                        "defaultEntrance":"flipInX",
+                        "sequentialDelay":300
                     }
                 );
                 this.answerItemAnimationScheduler.animateIn(function() {

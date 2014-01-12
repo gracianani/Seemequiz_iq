@@ -1,15 +1,15 @@
-<div id="sceneInGame" class="scene hidden" data-entranceAnimation="bounceInRight" data-exitAnimation="bounceOutLeft">
-        	
+<div id="sceneInGame" class="scene hidden" data-exitAnimation="bounceOutLeft" data-entranceAnimation="slideInRight">
+
     <section  id="inGame-progressContainer">
         <div id="inGame-progress-bar">
         </div>
-        <div id="inGame-progress-value">
-        0%
+        <div id="inGame-progress-value" data-entranceAnimation="flipInX">
+        0 / 0
         </div>
-        <div id="inGame-progress-startIcon">
+        <div id="inGame-progress-startIcon" data-entranceAnimation="bounceInLeft">
         	<img src="/app/img/progress-left.png" />
         </div>
-        <div id="inGame-progress-endIcon">
+        <div id="inGame-progress-endIcon" data-entranceAnimation="bounceInRight" data-exitAnimation="rotateOutUpRight">
         	<img src="/app/img/progress-right.png" />
         </div>
     </section><!--inGame-progressContainer-->    
@@ -17,9 +17,9 @@
     <section id="inGame-questionContainer">
     </section><!--inGame-questionContainer-->
         		
-    <section id="inGame-actionContainer" class="hidden">
-        <a  id="inGame-prev" class="btn btn-red">上一题</a>
-        <a  id="inGame-next" class="btn btn-yellow">下一题</a>
+    <section id="inGame-actionContainer" data-entranceAnimation="flipInX" >
+        <a  id="inGame-prev" >上一题</a>
+        <a  id="inGame-next" >下一题</a>
     </section><!--inGame-actionContainer-->
         		
 </div><!--sceneInGame-->

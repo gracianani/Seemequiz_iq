@@ -45,9 +45,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
             // View Event Handlers
             events: {
 
-                "click #btn-previous": "showPreviousQuestion",
-
-                "click #btn-next": "showNextQuestion"
+                "click #result-restart": "restartQuiz"
 
             },
 
@@ -64,6 +62,10 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
                 // Maintains chainability
                 return this;
 
+            },
+            
+            restartQuiz: function() {
+                Backbone.history.navigate('', { trigger: true, replace: true });
             }
 
         });

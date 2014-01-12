@@ -1,10 +1,10 @@
-<div class="question current">
+<div class="question">
     <div class="question-title">
-        {{questionId}}. {{questionText}}?
+        {{questionText}}
     </div>
     <ul class="question-list">
         {{#answers}}
-        <li class="question-item">{{answerText}}</li>
+        <li class="question-item" data-id="{{answerId}}"><i class="fa fa-square-o fa-fw"></i>{{answerText}}</li>
         {{/answers}}
     </ul>
 </div>

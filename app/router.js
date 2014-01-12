@@ -9,6 +9,7 @@
     var Scorings = require("collections/Scorings");
     var Results = require("collections/Results");
     var UserResult = require("models/UserResult");
+    var Quiz = require("models/Quiz");
 
     var InQuizView = require("views/InQuizView");
     var StartQuizView = require("views/StartQuizView");
@@ -19,6 +20,7 @@
     var userAnswers;
     var results;
     var scorings;
+    var quiz;
 
     var inQuizView;
     var startQuizView;
@@ -44,7 +46,7 @@
 
         routes: {
             "": "index",
-            "question/:questionId": "quiz",
+            "question/:questionId": "startQuiz",
             "result": "result"
         },
 
@@ -61,12 +63,23 @@
             t = setTimeout(this.prepare, 1000);
         },
 
-        quiz: function (questionId) {
-            if ( !questions || questions.size() < 1 ) {
+        startQuiz: function (questionId) {
+            if ( questions.isEmpty() ) {
                 Backbone.history.navigate('', { trigger: true, replace: true });
                 return;
             }
-            inQuizView = new InQuizView({ questionId: questionId, questions: questions, userAnswers: userAnswers });
+            
+            if ( inQuizView ) {
+                quiz.resetQuiz(parseInt(questionId));
+                inQuizView.render();
+                return;
+            }
+            quiz = new Quiz({
+                currentQuestionId: parseInt(questionId),
+                questions: questions,
+                userAnswers: userAnswers
+            });
+            inQuizView = new InQuizView({ model:quiz });
         },
 
         result: function () {

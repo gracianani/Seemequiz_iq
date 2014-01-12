@@ -116,7 +116,7 @@ define(["jquery", "backbone"],
                     jQuery(this).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(e){
                         objectsCount--;
                         jQuery(this).removeClass(self.triggerClass).removeClass(animationType);
-                        
+                        jQuery(this).addClass(self.hideClass);
                         if ( 0 == objectsCount ) {
                             if ( postAnimateOut ) {
                                 postAnimateOut();

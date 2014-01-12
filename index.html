@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
   <title>西米测试：你是哪位超级英雄？</title>
   <!-- Application styles. -->
+  <link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <!-- build:[href] /styles.min.css -->
   <link rel="stylesheet" href="/app/styles/index.css">
   <!-- /build -->
+   
 </head>
 <body ontouchstart="">
   <!-- Application container. -->
@@ -18,10 +21,11 @@
             <h1><a id="logo"><img src="/app/img/logo.png" alt="Seemeloo"></a>你是哪位超级英雄？</h1>
         </div>
         <div id="topBar-help" class="hidden" data-entranceAnimation="slideInDown">
-        <a href="" class="btn btn-yellow">?</a>
+        <a><i class="fa fa-question"></i></a>
+            <span class="topBar-help-caret"></span>
         </div>
       </header>
-      <div id="stage" class="container"></div>  
+      <div id="stage"></div>  
   </main>
   <!-- Application source. -->
   <!-- build:[src] /source.min.js -->
