@@ -37,10 +37,9 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
 
                 this.model.getResult();
 
-                this.model.set({
-                    "resultName" : this.model.finalResult.get("resultName"),
-                    "resultText": this.model.resultText
-                });
+                this.model.set(
+                    this.model.resultDetails.toJSON()
+                );
                 console.log(this.model); 
             },
 
