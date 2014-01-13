@@ -16,17 +16,34 @@
 <body ontouchstart="">
   <!-- Application container. -->
   <main role="main" id="main">
-      <header id="topBar">
+    <div id="stage"></div>
+    <header id="topBar">
         <div class="container">
-            <h1><a id="logo"><img src="/app/img/logo.png" alt="Seemeloo"></a>你是哪位超级英雄？</h1>
+            <h1><a id="logo"><img src="/app/img/logo.png" alt="Seemeloo" /></a>你是哪位超级英雄？</h1>
+        </div>
+        <div class="container hidden" id="topBar-text">
+
+            <a class="btn btn-green btn-block"><i class="fa fa-share-square-o fa-fw"></i>分享到微信</a>
+            <a class="btn btn-yellow btn-block"><i class="fa fa-magic fa-fw"></i>更多西米测试</a>
+            <a class="btn btn-blue btn-block"><i class="fa fa-hand-o-right fa-fw"></i> Seemeloo Studio 2014</a>
+            
+            
         </div>
         <div id="topBar-help" class="hidden" data-entranceAnimation="slideInDown">
-        <a><i class="fa fa-question"></i></a>
-            <span class="topBar-help-caret"></span>
+            <a><i class="fa fa-question"></i></a>
         </div>
-      </header>
-      <div id="stage"></div>  
+     </header>
+
   </main>
+  <div id="shareOverlay"  class="hidden">
+    <div id="shareOverlay-arrow">
+        <img src="/app/img/arrow.gif" />
+    </div>
+    <div id="shareOverlay-text">
+        点击右上角的<img src="app/img/button-share.png" width="32px" height="25px" /><br />
+        分享到微信好友，或朋友圈
+    </div>
+  </div>
   <!-- Application source. -->
   <!-- build:[src] /source.min.js -->
   <script data-main="/app/main" src="/vendor/bower/requirejs/require.js"></script>
