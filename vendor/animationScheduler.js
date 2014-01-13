@@ -80,7 +80,7 @@ define(["jquery", "backbone"],
                     }
                     
                     //invoke postAnimateOut when all animations are finished
-                    jQuery(this).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(e){
+                    jQuery(this).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd msAnimationEnd animationEnd animationend', function(e){
                         objectsCount--;
                         jQuery(this).removeClass(self.triggerClass).removeClass(animationType);
                         
@@ -113,7 +113,7 @@ define(["jquery", "backbone"],
                     }
                     
                     //invoke postAnimateOut when all animations are finished
-                    jQuery(this).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd', function(e){
+                    jQuery(this).one('webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd animationend msAnimationEnd', function(e){
                         objectsCount--;
                         jQuery(this).removeClass(self.triggerClass).removeClass(animationType);
                         jQuery(this).addClass(self.hideClass);
