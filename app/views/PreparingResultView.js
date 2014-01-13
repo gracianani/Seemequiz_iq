@@ -4,8 +4,12 @@
 
         var InQuizView = Backbone.View.extend({
 
+            initialize: function () {
+                this.waitingTime = 10;
+
+            }
         });
 
         return InQuizView;
-     }
-}
+    }
+);
