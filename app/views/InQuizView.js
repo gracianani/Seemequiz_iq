@@ -11,7 +11,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
 
             // View constructor
             initialize: function () {
-                            
+
                 this.listenTo(this.model, "change", this.onModelChange);
                 this.listenTo(this, "render", this.postRender);
 
@@ -24,8 +24,8 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 "click #inGame-prev": "showPreviousQuestion",
 
                 "click #inGame-next": "showNextQuestion",
-                
-                "click .question-item" : "onClickQuestionItem"
+
+                "click .question-item": "onClickQuestionItem"
 
             },
 
@@ -38,13 +38,13 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 this.$el.html(Mustache.render(this.template));
 
                 this.trigger("render");
-                
+
                 // Maintains chainability
                 return this;
 
             },
-            
-            postRender: function() {
+
+            postRender: function () {
                 var self = this;
                 this.initQuestionView();
                 this.updateProgress();
@@ -52,14 +52,14 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 this.sceneAnimationScheduler = new AnimationScheduler($('#sceneInGame'));
                 this.progressAnimationScheduler = new AnimationScheduler($('#inGame-progress-startIcon,#inGame-progress-endIcon'));
                 this.actionBarAnimationScheduler = new AnimationScheduler($('#inGame-actionContainer'));
-                this.sceneAnimationScheduler.animateIn(function() {
-                    self.progressAnimationScheduler.animateIn(function(){
+                this.sceneAnimationScheduler.animateIn(function () {
+                    self.progressAnimationScheduler.animateIn(function () {
                         self.questionView.render();
                     });
                 });
                 this.updateActionButton();
             },
-            
+
             showPreviousQuestion: function () {
                 if (!this.model.isFirstQuestion()) {
                     this.model.goToPreviousQuestion();
@@ -72,73 +72,74 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 }
                 else {
                     var self = this;
-                    this.$el.find('#inGame-progress-bar').animate({'width': '99%'});
-                    this.progressAnimationScheduler.animateOut(function(){
-                        self.sceneAnimationScheduler.animateOut(function() {
-                            Backbone.history.navigate("result", { trigger: true, replace: true }); 
+                    this.$el.find('#inGame-progress-bar').animate({ 'width': '99%' });
+                    this.progressAnimationScheduler.animateOut(function () {
+                        self.sceneAnimationScheduler.animateOut(function () {
+                            Backbone.history.navigate("result", { trigger: true, replace: true });
                         });
                     });
-                    
+
                 }
             },
-                     
-            onClickQuestionItem: function(e) {
-                this.model.processUserAnswer();
+
+            onClickQuestionItem: function (e) {
+
+                this.model.processUserAnswer(parseInt(e.target.getAttribute("data-id")));
                 this.updateActionButton();
                 this.showNextQuestion();
             },
-            
-            onQuestionAnimateComplete: function() {
+
+            onQuestionAnimateComplete: function () {
 
             },
-            
-            onModelChange: function(){
+
+            onModelChange: function () {
                 this.updateQuestionView();
                 Backbone.history.navigate('question/' + this.model.get("currentQuestionId"), { trigger: false, replace: true });
                 this.updateProgress();
                 this.updateActionButton();
             },
-            
-            updateProgress: function() {
+
+            updateProgress: function () {
                 this.$el.find('#inGame-progress-value').html(this.model.get("currentQuestionId") + ' / ' + this.model.getQuestionsCount());
-                this.$el.find('#inGame-progress-bar').animate({'width': this.model.get("progress") + '%'});
-                
-                if ( this.model.get("progress") > 45 ) {
-                    this.$el.find('#inGame-progress-value').css('color','white');
+                this.$el.find('#inGame-progress-bar').animate({ 'width': this.model.get("progress") + '%' });
+
+                if (this.model.get("progress") > 45) {
+                    this.$el.find('#inGame-progress-value').css('color', 'white');
                 }
             },
-            
-            initQuestionView: function() {
-                this.questionView = new QuestionView({ model : this.model.getCurrentQuestion() });
+
+            initQuestionView: function () {
+                this.questionView = new QuestionView({ model: this.model.getCurrentQuestion() });
                 this.listenTo(this.questionView, "animateComplete", this.onQuestionAnimateComplete);
             },
-            
-            updateQuestionView: function(){
-                this.questionView.model.set( this.model.getCurrentQuestion().toJSON() );
+
+            updateQuestionView: function () {
+                this.questionView.model.set(this.model.getCurrentQuestion().toJSON());
             },
-            
-            updateActionButton: function(){
+
+            updateActionButton: function () {
                 var next = this.$el.find("#inGame-next");
                 var prev = this.$el.find("#inGame-prev");
-                
-                if ( this.model.isCurrentQuestionAnswered() ) {
+
+                if (this.model.isCurrentQuestionAnswered()) {
                     prev.show();
-                    if ( this.$el.find("#inGame-actionContainer").hasClass("hidden") ) {
+                    if (this.$el.find("#inGame-actionContainer").hasClass("hidden")) {
                         this.actionBarAnimationScheduler.animateIn();
                     }
                 } else {
                     next.hide();
                 }
-                
-                if ( this.model.isFirstQuestion() ) {
+
+                if (this.model.isFirstQuestion()) {
                     prev.hide();
                 } else {
                     next.show();
-                    if ( this.$el.find("#inGame-actionContainer").hasClass("hidden") ) {
+                    if (this.$el.find("#inGame-actionContainer").hasClass("hidden")) {
                         this.actionBarAnimationScheduler.animateIn();
                     }
                 }
-                
+
             }
         });
 
