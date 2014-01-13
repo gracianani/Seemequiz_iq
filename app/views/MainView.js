@@ -22,7 +22,8 @@ define(["jquery", "backbone","animationscheduler"],
                 "click #shareOverlay":"hideShareOverlay",
                 "click #start-shareButton":"showShareOverlay",
                 "click #result-shareButton":"showShareOverlay",
-                "click #topBar-help":"toggleHelpPannel"
+                "click #topBar-help":"toggleHelpPannel",
+                "click #help-share":"showShareOverlay"
             },
 
             onClickLogo: function() {
@@ -55,6 +56,7 @@ define(["jquery", "backbone","animationscheduler"],
                         "height":"300px"
                     },"fast","swing", function(){
                         $("#topBar-text").removeClass("hidden");
+                        $("#topBar-help .fa-question").addClass("fa-chevron-up").removeClass("fa-question");
                     });
                     
                 } else {
@@ -63,7 +65,7 @@ define(["jquery", "backbone","animationscheduler"],
                     topbar.animate({
                         "height":"43px"
                     },"fast","swing", function(){
-                        
+                        $("#topBar-help .fa-chevron-up").removeClass("fa-chevron-up").addClass("fa-question");
                     });
                 }
                 

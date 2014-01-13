@@ -40,7 +40,8 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
                 this.model.set({
                     "resultName" : this.model.finalResult.get("resultName"),
                     "resultText": this.model.resultText
-                }); 
+                });
+                console.log(this.model); 
             },
 
             // View Event Handlers
