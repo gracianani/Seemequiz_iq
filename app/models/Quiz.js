@@ -42,8 +42,7 @@ define(["jquery", "backbone"],
                         this.userAnswers.where({ "questionId": this.get("currentQuestionId") })
                     );
                 }
-                this.userAnswers.add({ "questionId": this.get("currentQuestionId"), "answerId": 1 });
-                console.log(this.userAnswers.toJSON());
+                this.userAnswers.add({ "questionId": this.get("currentQuestionId"), "answerId": answerId });
             },
             getCurrentQuestion: function() {
                 var question = this.questions.get( this.get("currentQuestionId") ).clone();

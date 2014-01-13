@@ -1,43 +1,59 @@
 ﻿[
     {
         "resultId" : 1,
-        "resultShortDescription" : "超人",
-		"resultLongDescription" : ""
+		"resultName" : "超人",
+        "resultShortDescription" : "You're much stronger than you think you are. Trust me.",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 2,
-        "resultShortDescription" : "蜘蛛侠",
-		"resultLongDescription" : ""
+        "resultName" : "蜘蛛侠",
+		"resultShortDescription" : "The truth is... you don't know what you feel except you know what kind of man you want to be.",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 3,
-        "resultShortDescription" : "蝙蝠侠",
-		"resultLongDescription" : ""
+        "resultName" : "蝙蝠侠",
+		"resultShortDescription" : "It's not who I am underneath, but what I do that defines me.",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 4,
-        "resultShortDescription" : "钢铁侠",
-		"resultLongDescription" : ""
+        "resultName" : "钢铁侠",
+		"resultShortDescription" : "I'm Tony Stark. I build neat stuff, got a great girl, occasionally save the world. So why can't I sleep?",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 5,
-        "resultShortDescription" : "猫女",
-		"resultLongDescription" : ""
+        "resultName" : "猫女",
+		"resultShortDescription" : "Live fast. Love hard. Die young. Leave a good-smelling corpse",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 6,
-        "resultShortDescription" : "神奇女侠",
-		"resultLongDescription" : ""
+        "resultName" : "神奇女侠",
+		"resultShortDescription" : "Women are the wave of the future, and sisterhood is stronger than anything! ",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 7,
-        "resultShortDescription" : "绿巨人",
-		"resultLongDescription" : ""
+        "resultName" : "绿巨人",
+		"resultShortDescription" : "Leave me alone.",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 8,
-        "resultShortDescription" : "雷神",
-		"resultLongDescription" : ""
+        "resultName" : "雷神",
+		"resultShortDescription" : "You think me strange? Good strange, or bad strange?",
+		"resultLongDescription" : "",
+		"resultImageUrl" : ""
     },
     {
         "resultId" : 9,
@@ -61,7 +77,8 @@
     },
     {
         "resultId" : 13,
-        "resultShortDescription" : "洛基",
+        "resultName" : "洛基",
+		"resultShortDescription" : "I never wanted the throne, I only ever wanted to be your equal!",
 		"resultLongDescription" : ""
     },
     {

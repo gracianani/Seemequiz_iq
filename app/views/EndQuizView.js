@@ -38,6 +38,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
                 this.model.getResult();
 
                 this.model.set({
+                    "resultName" : this.model.finalResult.get("resultName"),
                     "resultText": this.model.resultText
                 }); 
             },
@@ -55,7 +56,6 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
                 // Setting the view's template property using the Underscore template method
                 this.template = _.template(template, {});
 
-                console.log(this.model.toJSON());
                 // Dynamically updates the UI with the view's template
                 this.$el.html(Mustache.render(this.template, this.model.toJSON()));
 

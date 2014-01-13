@@ -28,12 +28,14 @@ define(["jquery", "backbone"],
             },
 
             getResult: function () {
-                var finalResult = this.currentScore.max(
+
+                this.finalResult = this.currentScore.max(
                     function (userScore) {
                         return userScore.get("score");
                     });
-                this.resultText = this.resultRepo.findWhere({ resultId: finalResult.get("resultId") }).get("resultShortDescription");
-                return finalResult;
+                console.log(this.finalResult);
+                this.resultText = this.resultRepo.findWhere({ resultId: this.finalResult.get("resultId") }).get("resultShortDescription");
+                return this.finalResult;
             }
 
         });
