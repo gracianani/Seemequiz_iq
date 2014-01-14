@@ -1,8 +1,8 @@
 // EndQuizView.js
 // -------
-define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
+define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animationscheduler"],
 
-    function ($, Backbone, Mustache, template) {
+    function ($, Backbone, Mustache, template, AnimationScheduler) {
 
         var EndQuizView = Backbone.View.extend({
 
@@ -18,6 +18,8 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
 
                 // Calls the view's render method
                 this.listenTo(this.model, "change", this.render);
+                
+                this.listenTo(this, "render", this.postRender);
 
                 this.calculate();
             },
@@ -40,13 +42,13 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
                 this.model.set(
                     this.model.resultDetails.toJSON()
                 );
-                console.log(this.model); 
             },
 
             // View Event Handlers
             events: {
 
-                "click #result-restart": "restartQuiz"
+                "click #result-restart": "restartQuiz",
+                "click #quick-restart": "restartQuiz"
 
             },
 
@@ -58,12 +60,24 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html"],
 
                 // Dynamically updates the UI with the view's template
                 this.$el.html(Mustache.render(this.template, this.model.toJSON()));
-
+                
+                this.trigger("render");
+                
                 // Maintains chainability
                 return this;
 
             },
-            
+            postRender: function() {
+                var self = this;
+                this.stageAnimationScheduler = new AnimationScheduler( this.$el.find(".result-name-title, .result-name, .result-img img,.result-quote"), {
+                    isSequential:true
+                });
+                this.buttonAnimationScheduler = new AnimationScheduler( this.$el.find("#quick-share,#quick-restart, .result-score") );
+                
+                this.stageAnimationScheduler.animateIn(function(){
+                    self.buttonAnimationScheduler.animateIn();
+                });
+            },
             restartQuiz: function() {
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }

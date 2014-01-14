@@ -85,7 +85,6 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             onClickQuestionItem: function (e) {
 
                 this.model.processUserAnswer(parseInt(e.target.getAttribute("data-id")));
-                this.updateActionButton();
                 this.showNextQuestion();
             },
 
@@ -123,7 +122,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 var prev = this.$el.find("#inGame-prev");
 
                 if (this.model.isCurrentQuestionAnswered()) {
-                    prev.show();
+                    next.show();
                     if (this.$el.find("#inGame-actionContainer").hasClass("hidden")) {
                         this.actionBarAnimationScheduler.animateIn();
                     }
@@ -134,7 +133,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 if (this.model.isFirstQuestion()) {
                     prev.hide();
                 } else {
-                    next.show();
+                    prev.show();
                     if (this.$el.find("#inGame-actionContainer").hasClass("hidden")) {
                         this.actionBarAnimationScheduler.animateIn();
                     }

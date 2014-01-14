@@ -186,6 +186,11 @@ h1 {
 	cursor: pointer;
 	
 }
+.btn-mini {
+    line-height: 30px;
+    height: 30px;
+    padding: 5px;
+}
 .btn-yellow {
 	background: #e7aa00;
 	color: #FFF;
@@ -496,6 +501,26 @@ body, html, #main,#stage,.scene {
 }
 #topBar-text .btn{
     text-align: left;
+}
+.result-quickButton {
+    position: absolute;
+    width: 100%;
+    top:140px;
+    left: 0;
+}
+#quick-share {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    padding-right: 0;
+}
+#quick-restart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    padding-left: 0;
 }
 /* ==========================================================================
    Helper classes

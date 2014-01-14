@@ -8,7 +8,8 @@ define(["jquery", "backbone", "models/UserAnswer"],
 
             model: UserAnswer,
             isAnswered: function(questionId) {
-                return ( this.where({ "questionId": questionId }).length > 0 );
+                var answersCount = this.where({ "questionId": questionId }).length;
+                return ( answersCount > 0 );
             }
 
         });

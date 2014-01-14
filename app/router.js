@@ -83,7 +83,12 @@
         },
 
         result: function () {
-            endQuizView = new EndQuizView({ model: new UserResult({ results: results }), scorings: scorings, userAnswers: userAnswers });
+            if ( userAnswers.length > 0 ) {
+                endQuizView = new EndQuizView({ model: new UserResult({ results: results }), scorings: scorings, userAnswers: userAnswers });
+            } else {
+                Backbone.history.navigate('', { trigger: true, replace: true });
+            }
+            
         }
     });
 });

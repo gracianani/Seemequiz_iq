@@ -2,18 +2,18 @@
     <section class="result-name-title">
         你可以保持沉默...<br />但我们很有理由怀疑你是
     </section>
-    <section class="result-name">
+    <section class="result-name" data-entranceAnimation="flipInX">
         {{resultName}} 
     </section>
     <section class="result-img">
-        <img src="/app/img/resulttest.png" />
-        <section class="result-score">
+        <img src="/app/img/resulttest.png"  data-entranceAnimation="flipInY" />
+        <section class="result-score" data-entranceAnimation="flipInY">
             <div class="result-score-title">嫌疑指数</div>
             <div class="result-score-number">59<small>%</small></div>
         </section>
     </section>
     
-    <section class="result-quote">
+    <section class="result-quote" data-entranceAnimation="flipInY" >
         {{resultShortDescription}}
         <div class="caret"></div>
     </section>
@@ -22,6 +22,10 @@
     </section>
     <section class="result-action">
         <a id="result-share" class="btn btn-yellow btn-block"><i class="fa fa-share-square-o"></i> 分享到微信</a>
-        <a id="result-restart" class="btn btn-red btn-block"><i class="fa fa-refresh"></i> 重新测试</a>
+        <a id="result-restart" class="btn btn-red btn-block"><i class="fa fa-undo"></i> 重新测试</a>
+    </section>
+    <section class="result-quickButton">
+        <a id="quick-share" class="btn btn-mini btn-yellow  btn-block" data-entranceAnimation="bounceInRight"><i class="fa fa-share-square-o fa-fw"></i></a>
+        <a id="quick-restart" class="btn btn-mini btn-red  btn-block" data-entranceAnimation="bounceInLeft"><i class="fa fa-undo fa-fw"></i></a>
     </section>
 </div><!--sceneResult-->
