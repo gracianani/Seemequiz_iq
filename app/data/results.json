@@ -4,101 +4,111 @@
 		"resultName" : "超人",
         "resultShortDescription" : "You're much stronger than you think you are. Trust me.",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/1.png"
     },
     {
         "resultId" : 2,
         "resultName" : "蜘蛛侠",
 		"resultShortDescription" : "The truth is... you don't know what you feel except you know what kind of man you want to be.",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/2.png"
     },
     {
         "resultId" : 3,
         "resultName" : "蝙蝠侠",
 		"resultShortDescription" : "It's not who I am underneath, but what I do that defines me.",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/3.png"
     },
     {
         "resultId" : 4,
         "resultName" : "钢铁侠",
 		"resultShortDescription" : "I'm Tony Stark. I build neat stuff, got a great girl, occasionally save the world. So why can't I sleep?",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/4.png"
     },
     {
         "resultId" : 5,
         "resultName" : "猫女",
 		"resultShortDescription" : "Live fast. Love hard. Die young. Leave a good-smelling corpse",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/5.png"
     },
     {
         "resultId" : 6,
         "resultName" : "神奇女侠",
 		"resultShortDescription" : "Women are the wave of the future, and sisterhood is stronger than anything! ",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/6.png"
     },
     {
         "resultId" : 7,
         "resultName" : "绿巨人",
 		"resultShortDescription" : "Leave me alone.",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/7.png"
     },
     {
         "resultId" : 8,
         "resultName" : "雷神",
 		"resultShortDescription" : "You think me strange? Good strange, or bad strange?",
 		"resultLongDescription" : "",
-		"resultImageUrl" : ""
+		"resultImageUrl" : "results/8.png"
     },
     {
         "resultId" : 9,
         "resultShortDescription" : "Harry",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "",
+		"resultImageUrl" : "results/9.png"
     },
     {
         "resultId" : 10,
         "resultShortDescription" : "绿灯侠",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "",
+		"resultImageUrl" : "results/10.png"
     },
     {
         "resultId" : 11,
         "resultShortDescription" : "金刚狼",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "",
+		"resultImageUrl" : "results/11.png"
     },
     {
         "resultId" : 12,
         "resultShortDescription" : "黑寡妇",
-		"resultLongDescription" : "Love is for children. I owe him a debt."
+		"resultLongDescription" : "Love is for children. I owe him a debt.",
+		"resultImageUrl" : "results/12.png",
+		"resultLongDescription" : "你外表美艳，却有着钢铁般坚强的意志。在事业上，你出手果断，残酷消灭一切任务。在感情上，你表现得像秋风扫落叶一般无情，内心是浓烈的伏特加。同志，请勇敢地前进！"
     },
     {
         "resultId" : 13,
         "resultName" : "洛基",
 		"resultShortDescription" : "I never wanted the throne, I only ever wanted to be your equal!",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "你有些自我中心，时而游走在崩溃的边缘。有人说，你的“中二病”有点病入膏肓了，也有人说，兼具智慧、美貌与手腕的人才有资格自恋！容我说一句：司令，请收下我的膝盖！",
+		"resultImageUrl" : "results/13.png"
     },
     {
         "resultId" : 14,
         "resultShortDescription" : "超杀女",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "手起刀落，快人快语",
+		"resultImageUrl" : "results/14.png"
     },
     {
         "resultId" : 15,
         "resultShortDescription" : "海扁王",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "(⊙o⊙)…",
+		"resultImageUrl" : "results/15.png"
     },
     {
         "resultId" : 16,
         "resultShortDescription" : "绿箭侠",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "",
+		"resultImageUrl" : "results/16.png"
     },
     {
         "resultId" : 17,
         "resultShortDescription" : "美国队长",
-		"resultLongDescription" : ""
+		"resultLongDescription" : "",
+		"resultImageUrl" : "results/17.png"
     }
 ]
