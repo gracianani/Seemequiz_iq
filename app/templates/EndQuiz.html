@@ -6,10 +6,10 @@
         {{resultName}} 
     </section>
     <section class="result-img">
-        <img src="/app/img/resulttest.png"  data-entranceAnimation="flipInY" />
+        <img src="/app/img/results/{{resultId}}.png"  data-entranceAnimation="flipInY" />
         <section class="result-score" data-entranceAnimation="flipInY">
             <div class="result-score-title">嫌疑指数</div>
-            <div class="result-score-number">59<small>%</small></div>
+            <div class="result-score-number">{{score}}<small>%</small></div>
         </section>
     </section>
     
@@ -18,7 +18,7 @@
         <div class="caret"></div>
     </section>
     <section class="result-text">
-        你是一个冷酷得令人发指的顶级刺客，完成任务就像你的本能一样自然。
+        {{resultLongDescription}}
     </section>
     <section class="result-action">
         <a id="result-share" class="btn btn-yellow btn-block"><i class="fa fa-share-square-o"></i> 分享到微信</a>

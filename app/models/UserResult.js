@@ -34,9 +34,11 @@ define(["jquery", "backbone"],
                         return userScore.get("score");
                     });
 
-                this.resultDetails = this.resultRepo.findWhere({ resultId: resultScore.get("resultId") });
+                var resultDetails = this.resultRepo.findWhere({ resultId: resultScore.get("resultId") }).clone();
+                
+                resultDetails.set("score", Math.floor(resultScore.get("score") * 100 / 10 ));
 
-                return this.resultDetails;
+                return resultDetails;
             }
 
         });

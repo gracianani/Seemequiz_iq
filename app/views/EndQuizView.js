@@ -37,11 +37,12 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                     }
                 });
 
-                this.model.getResult();
+                
 
                 this.model.set(
-                    this.model.resultDetails.toJSON()
+                    this.model.getResult().toJSON()
                 );
+
             },
 
             // View Event Handlers
