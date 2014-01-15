@@ -18,7 +18,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
 
                 // Calls the view's render method
                 this.listenTo(this.model, "change", this.render);
-                
+
                 this.listenTo(this, "render", this.postRender);
 
                 this.calculate();
@@ -29,15 +29,16 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                 var self = this;
 
                 this.userAnswers.each(function (userAnswer) {
-                    var result = self.scoringRepo.findWhere(userAnswer.toJSON());
-                    if (typeof (result) != "undefined") {
-                        var resultId = result.get("resultId");
-                        var score = result.get("score");
-                        self.model.addScore(resultId, score);
-                    }
-                });
 
-                
+                    var results = self.scoringRepo.where(userAnswer.toJSON());
+                    results.filter(function (result) {
+                        if (typeof (result) != "undefined") {
+                            var resultId = result.get("resultId");
+                            var score = result.get("score");
+                            self.model.addScore(resultId, score);
+                        }
+                    });
+                });
 
                 this.model.set(
                     this.model.getResult().toJSON()
@@ -61,28 +62,28 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
 
                 // Dynamically updates the UI with the view's template
                 this.$el.html(Mustache.render(this.template, this.model.toJSON()));
-                
+
                 this.trigger("render");
-                
+
                 // Maintains chainability
                 return this;
 
             },
-            postRender: function() {
+            postRender: function () {
                 var self = this;
-                this.stageAnimationScheduler = new AnimationScheduler( this.$el.find(".result-name-title, .result-name, .result-img img,.result-quote"), {
-                    isSequential:true
+                this.stageAnimationScheduler = new AnimationScheduler(this.$el.find(".result-name-title, .result-name, .result-img img,.result-quote"), {
+                    isSequential: true
                 });
-                this.buttonAnimationScheduler = new AnimationScheduler( this.$el.find("#quick-share,#quick-restart, .result-score") );
-                
-                this.stageAnimationScheduler.animateIn(function(){
+                this.buttonAnimationScheduler = new AnimationScheduler(this.$el.find("#quick-share,#quick-restart, .result-score"));
+
+                this.stageAnimationScheduler.animateIn(function () {
                     self.buttonAnimationScheduler.animateIn();
                 });
                 
                 var title = "万万没想到，我是传说中的" + this.model.get("resultName") + "！你也来测看看吧！";
                 $('title').text(title);
             },
-            restartQuiz: function() {
+            restartQuiz: function () {
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }
 
