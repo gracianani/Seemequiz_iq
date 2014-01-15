@@ -64,12 +64,12 @@
         },
 
         startQuiz: function (questionId) {
-            if ( questions.isEmpty() ) {
+            if (questions.isEmpty()) {
                 Backbone.history.navigate('', { trigger: true, replace: true });
                 return;
             }
-            
-            if ( inQuizView ) {
+
+            if (inQuizView) {
                 quiz.resetQuiz(parseInt(questionId));
                 inQuizView.render();
                 return;
@@ -79,16 +79,16 @@
                 questions: questions,
                 userAnswers: userAnswers
             });
-            inQuizView = new InQuizView({ model:quiz });
+            inQuizView = new InQuizView({ model: quiz });
         },
 
         result: function () {
-            if ( userAnswers.length > 0 ) {
+            if (userAnswers.length > 0) {
                 endQuizView = new EndQuizView({ model: new UserResult({ results: results }), scorings: scorings, userAnswers: userAnswers });
             } else {
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }
-            
+
         }
     });
 });

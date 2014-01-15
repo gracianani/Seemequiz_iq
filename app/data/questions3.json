@@ -193,14 +193,10 @@
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "幸福而快乐"
-			},
-			{
-				"answerId" : 2,
 				"answerText" : "还可以"
 			},
 			{
-				"answerId" : 3,
+				"answerId" : 2,
 				"answerText" : "发生了一些悲伤的事，不愿再提起"
 			}
 		]
@@ -274,7 +270,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "非常不满意（摊手"
+				"answerText" : "不重要"
 			}
 		]
 	}, 
@@ -352,11 +348,11 @@
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "是的，请叫我DIVA(天后)"
+				"answerText" : "是的，我总是很懂别人"
 			},
 			{
 				"answerId" : 2,
-				"answerText" : "不是，我喜欢低调一些"
+				"answerText" : "不是，人心对我而言是个谜"
 			}
 		]
 	}, 
@@ -384,7 +380,7 @@
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "非常好，小脑杠杠的"
+				"answerText" : "非常好，媲美杂技演员"
 			},
 			{
 				"answerId" : 2,
@@ -430,33 +426,33 @@
 	}, 
 	{ 
 		"questionId" : 25,
-		"questionText" : "你是否总把自己隐藏得很深？",
+		"questionText" : "你是否拥有别人看不出的潜力？",
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "对！深藏功与名"
+				"answerText" : "有很多哦！"
 			},
 			{
 				"answerId" : 2,
-				"answerText" : "不，我做任何事情都光明正大"
+				"answerText" : "我的潜力如此明显，别人怎么可能看不出来！"
 			}
 		]
 	}, 
 	{ 
 		"questionId" : 26,
-		"questionText" : "你喜欢社交吗？",
+		"questionText" : "你是不是很孤独？",
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "不喜欢，我总是独来独往。"
+				"answerText" : "是的，我总是独来独往。"
 			},
 			{
 				"answerId" : 2,
-				"answerText" : "一般般"
+				"answerText" : "有时觉得孤独"
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "必须的，我是个交际花/小王子"
+				"answerText" : "不，一点也不孤独"
 			}
 		]
 	}, 
@@ -480,7 +476,7 @@
 	}, 
 	{ 
 		"questionId" : 28,
-		"questionText" : "你经常搬家吗？",
+		"questionText" : "你是否伤害别人但是自己没有意识到？",
 		"answers" : [
 			{
 				"answerId" : 1,
@@ -506,13 +502,13 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "跑不动..."
+				"answerText" : "跑不动"
 			}
 		]
 	}, 
 	{ 
 		"questionId" : 30,
-		"questionText" : "你喜欢和人调情吗？",
+		"questionText" : "你跑得很快吗？",
 		"answers" : [
 			{
 				"answerId" : 1,
@@ -530,7 +526,7 @@
 	}, 
 	{ 
 		"questionId" : 31,
-		"questionText" : "你是不是在某个领域非常有天分？",
+		"questionText" : "你是不是在某个领域非常有天分",
 		"answers" : [
 			{
 				"answerId" : 1,
@@ -714,7 +710,7 @@
 			},
 			{
 				"answerId" : 4,
-				"answerText" : "胖子算强壮么..."
+				"answerText" : "不，我有些瘦弱"
 			}
 		]
 	}, 
