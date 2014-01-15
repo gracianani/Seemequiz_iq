@@ -78,6 +78,9 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                 this.stageAnimationScheduler.animateIn(function(){
                     self.buttonAnimationScheduler.animateIn();
                 });
+                
+                var title = "万万没想到，我是传说中的" + this.model.get("resultName") + "！你也来测看看吧！";
+                $('title').text(title);
             },
             restartQuiz: function() {
                 Backbone.history.navigate('', { trigger: true, replace: true });
