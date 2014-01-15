@@ -100,7 +100,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             },
 
             updateProgress: function () {
-                this.$el.find('#inGame-progress-value').html(this.model.get("currentQuestionId") + ' / ' + this.model.getQuestionsCount());
+                this.$el.find('#inGame-progress-value').html(this.model.currentQuestionNumber()  + ' / ' + this.model.getQuestionsCount());
                 this.$el.find('#inGame-progress-bar').animate({ 'width': this.model.get("progress") + '%' });
 
                 if (this.model.get("progress") > 45) {
