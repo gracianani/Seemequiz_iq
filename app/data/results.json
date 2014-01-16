@@ -4,83 +4,83 @@
 		"resultName" : "超人",
         "resultShortDescription" : "You're much stronger than you think you are. Trust me.",
 		"resultLongDescription" : "<p>在这个充满反叛的年代，你代表着依然缅怀“黄金时代”的人，对美好的一切定义。</p><p>你懂得“爱”、“善良”、“人性”这几个词背后的深意，安于平凡的身份，选择了现实的工作，但每到关键时刻，你总会挺身而出。现实艰险，做一个完美的楷模，必将付出巨大的努力。</p><p>你是一位独一无二的超级英雄！</p>",
-		"resultImageUrl" : "results/1.png"
+		"resultImageUrl" : "result/1.png"
     },
     {
         "resultId" : 2,
         "resultName" : "蜘蛛侠",
 		"resultShortDescription" : "The truth is... you don't know what you feel except you know what kind of man you want to be.",
 		"resultLongDescription" : "<p>你内心的投影永远是一个青年人：你一直处在青春期，却绝不被叛逆吞噬；你也有少年维特的烦恼，却绝不走向自我毁灭；你经常遇到挫折，却保持良善。</p><p>你是真正的、属于这个时代的青年英雄。背上的蜘蛛传达出这一切事情的缘由——独立的思想、行动力量。</p>",
-		"resultImageUrl" : "results/2.png"
+		"resultImageUrl" : "result/2.png"
     },
     {
         "resultId" : 3,
         "resultName" : "蝙蝠侠",
 		"resultShortDescription" : "It's not who I am underneath, but what I do that defines me.",
 		"resultLongDescription" : "<p>你只适合大都市，是黑夜中的传奇。你不信奉末日的梦魇，也不像Tony Stark那样是一个未来主义者，对你而言，当下即是炼狱。</p><p>你是超级英雄中的哈姆雷特：你经常陷入沉思，被人误解、孤身一人、永远背负着沉重过去。但当你解开心结，重展笑容时，大家会感受到，你的内心燃烧着不灭的光明。</p>",
-		"resultImageUrl" : "results/3.png"
+		"resultImageUrl" : "result/3.png"
     },
     {
         "resultId" : 4,
         "resultName" : "钢铁侠",
 		"resultShortDescription" : "I'm Tony Stark. I build neat stuff, got a great girl, occasionally save the world. So why can't I sleep?",
 		"resultLongDescription" : "<p>身为一个未来主义者，以及<del>内增</del>高帅富，你能够<del>只在必要的地方</del>付出超乎常人的努力，你总能follow上各种最新的科技，顺便一提，你居然还是个超级天才！如此天妒人怨的设定，让人只能拜倒在你那2014春夏高级定制超修身西装裤之下。</p><p>你唯独不是完美主义者，因此你像一个摇滚明星一样，玩世不恭，风流倜傥……但这些都无法掩饰，你是一个可爱的英雄！</p>",
-		"resultImageUrl" : "results/4.png"
+		"resultImageUrl" : "result/4.png"
     },
     {
         "resultId" : 5,
         "resultName" : "猫女",
 		"resultShortDescription" : "Live fast. Love hard. Die young. Leave a good-smelling corpse",
 		"resultLongDescription" : "<p>你非常独立，有着灵活的价值观，在黑白两道自由穿梭。鞭子、皮衣，轻盈的跳跃是你标志性的符号。</p><p>你对那些循规蹈矩的事情嗤之以鼻，不冒险，哪有乐趣呢。你是城市中最好的盗贼，不光是那些珍贵的珠宝，还有人心。</p>",
-		"resultImageUrl" : "results/5.png"
+		"resultImageUrl" : "result/5.png"
     },
     {
         "resultId" : 6,
         "resultName" : "神奇女侠",
 		"resultShortDescription" : "Women are the wave of the future, and sisterhood is stronger than anything! ",
 		"resultLongDescription" : "<p>维纳斯的美丽、雅典娜的聪明、比墨丘利的敏捷、比海格力斯的强壮，各种赞美于你一身。生活中，你总是散发出满满的正能量，受到大家的喜爱。</p><p>但是，请切记骄傲自满。逆水行舟 ，不进则退！</p>",
-		"resultImageUrl" : "results/6.png"
+		"resultImageUrl" : "result/6.png"
     },
     {
         "resultId" : 7,
         "resultName" : "绿巨人",
 		"resultShortDescription" : "Leave me alone.",
 		"resultLongDescription" : "<p>你不喜欢很多事情，尤其是那些和自己沾边的。</p><p>你深藏着对愤怒的恐惧，害怕熊熊燃烧的怒火所带来的毁灭性后果。当怒气褪去后，你感到羞愧和悔恨。这形成了你独特的人格——愤怒中有点小悲伤，自卑中带点小呆萌。</p><p>套用隔壁的一句话，“能力越大，责任越大”，别在自怨自艾了，你的破坏力可是数一数二的！任何人，胆敢在你面前吐出一个“绿”或“胖”字，请毫不犹豫的将他甩向外太空！</p>",
-		"resultImageUrl" : "results/7.png"
+		"resultImageUrl" : "result/7.png"
     },
     {
         "resultId" : 8,
         "resultName" : "雷神",
 		"resultShortDescription" : "You think me strange? Good strange, or bad strange?",
 		"resultLongDescription" : "<p>你是集万千宠爱于一身的阳光神二代，拥有令九界闻风丧胆的强大武力。有人觉得你鲁莽张狂，谁又了解，众神的宫殿中，上演着绵延世纪的朝代剧、英雄殉道、恋人分离、列王逝去……你比谁都懂得自大的危险和谦卑的重要。</p><p>今朝有酒今朝醉，明日愁来明日愁，还有数千年的岁月尔虞我诈走向灭亡，洒脱一回何罪之有？</p>",
-		"resultImageUrl" : "results/8.png"
+		"resultImageUrl" : "result/8.png"
     },
     {
         "resultId" : 9,
         "resultName" : "Harry Osborn",
         "resultShortDescription" : "You gonna kill me like you killed my father?",
 		"resultLongDescription" : "<p>你有着还不错的家境，还不错的外表，还不错的能力……或许正是这么多的“还不错”，注定了你的一生中都无法真正拥有的超人的能力，谁能说这不是一种遗憾？人们总是倾向于忽视你，因为你不需要帮助，你也不会处于绝境咸鱼翻身。</p><p>在某一两个时刻，你感到自己充满力量，聚光灯已把你照亮，不曾想灯光只是不经意扫过，最终停留在蜘蛛侠或者其他的英雄身上。</p><p>其实，英雄梦属于每一个人，救赎的机会就在身边，你需要自己去争取。</p>",
-		"resultImageUrl" : "results/9.png"
+		"resultImageUrl" : "result/9.png"
     },
     {
         "resultId" : 10,
         "resultName" : "绿灯侠",
         "resultShortDescription" : "In brightest day... in balckest night, no evil shall escape my sight! Let those who worship evil's might beware my power -- Green Lantern's light!",
 		"resultLongDescription" : "<p>你拥有天马行空的想象力，及远超一般人的天赋。生活中，你十分懂得讨异性欢心，耍帅扮酷是你的拿手好戏。</p><p>但是，自命不凡的你仍需不断磨练你的意志，并完善各方面能力。等到好运降临你身上的那天，届时，你将势不可挡。</p>",
-		"resultImageUrl" : "results/10.png"
+		"resultImageUrl" : "result/10.png"
     },
     {
         "resultId" : 11,
         "resultName" : "金刚狼",
         "resultShortDescription" : "I go...where I WANNAAAAAAA GOOOOOOOO!!!",
 		"resultLongDescription" : "<p>外表冷酷凶猛，内心温柔善良。独来独往是你的作风，但并不代表了你厌世与逃避，为了挚爱，为了正义，钢筋铁骨的你会化身为凶猛野兽，撕开阻碍的一切。</p><p>你毅力过人，却有一些大男子主义，时不时会犯下难以释怀的错误，噩梦缠身，但迅速恢复是你的特点，因为你就是那只打不死的小强！</p>",
-		"resultImageUrl" : "results/11.png"
+		"resultImageUrl" : "result/11.png"
     },
     {
         "resultId" : 12,
         "resultName" : "黑寡妇",
-		"resultLongDescription" : "Love is for children. I owe him a debt.",
-		"resultImageUrl" : "results/12.png",
+		"resultShortDescription" : "Love is for children. I owe him a debt.",
+		"resultImageUrl" : "result/12.png",
 		"resultLongDescription" : "<p>你外表美艳，却有着钢铁般坚强的意志。在事业上，出手果断地你，总是残酷地消灭一切任务，拥有领导的绝对信任。在感情上，你表现得像凛冽的冬季风，内心却是浓烈的伏特加。</p><p>有些小闷骚的娜塔莎同志，请勇敢地前进吧！</p>"
     },
     {
@@ -88,34 +88,34 @@
         "resultName" : "洛基",
 		"resultShortDescription" : "I never wanted the throne, I only ever wanted to be your equal!",
 		"resultLongDescription" : "<p>你就是传说中万里挑一的“高功能反社会人格”拥有者。你自我鉴定为风华绝代，智勇双全，神话中足以毁灭诸神的狠角色。</p><p>理论上说，99%的生物臣服足下妥妥的吧，但多次实验数据证明：连蚂蚁都懒得跪你一下。这般残酷的现实，令你无比阴郁，甚至游走在崩溃的边缘，看起来充满了哥特摇滚范儿。</p><p>对于你这样傲娇的中二病患者，容我喊一声：大王，这是我的膝盖请收好！</p>",
-		"resultImageUrl" : "results/13.png"
+		"resultImageUrl" : "result/13.png"
     },
     {
         "resultId" : 14,
         "resultName" : "超杀女",
         "resultShortDescription" : "Show's over, motherfuckers!",
 		"resultLongDescription" : "<p>你并不老成，却拥有与年龄不相符的强大行动力。你的周围净是猪一样的队友，你却从不计较，为他们收拾烂摊子。正因如此，你总能轻松成为队长级的人物。</p><p>遥想20年前，一个杀手Leon和小女孩的故事令无数人动容，你直接继承了两人的所有萌点：萝莉型大叔心。少女，祖国的未来就交给你了！</p>",
-		"resultImageUrl" : "results/14.png"
+		"resultImageUrl" : "result/14.png"
     },
     {
         "resultId" : 15,
         "resultName" : "海扁王",
         "resultShortDescription" : "Come on, be honest with yourself. At some point in our lives we all wanna be a super hero.",
 		"resultLongDescription" : "<p>(⊙o⊙)…每个人的一生中，总难免当几回猪一样的队友。而你不过是多当了两回。</p><p>话说，超级英雄的模式不应该是“表面普通一撂衬衫进入紧身衣模式一切就妥了”么？你衣服都脱了咋只有挨打的份，说好的主角光环呢？</p><p>其实，宅男和英雄的距离，可能只是一个健身房……</p>",
-		"resultImageUrl" : "results/15.png"
+		"resultImageUrl" : "result/15.png"
     },
     {
         "resultId" : 16,
         "resultName" : "绿箭侠",
         "resultShortDescription" : "The way I see it, we can do one of two things: run for it... in which case they can overtake us in a power boat and machine gun us from a safe distance... or stand and fight.",
 		"resultLongDescription" : "<p>曾经幸福的你，在突如其来的一场变故中却失去了挚爱。从此你开始改变，外表看似放荡不羁，内心却变得坚强。你刻苦磨练自己的身躯与意志，科技也成为你的最大助力。</p><p>孩纸，曾经的错误等着你去弥补，同时也应该为了自己心中的理想，去奋斗。</p>",
-		"resultImageUrl" : "results/16.png"
+		"resultImageUrl" : "result/16.png"
     },
     {
         "resultId" : 17,
         "resultName" : "美国队长",
         "resultShortDescription" : "I'm loyal to nothing, General.. except the Dream.",
 		"resultLongDescription" : "<p>出生在天真、正义的世界中的你，是一位老派的精神领袖。你与当下格格不入，但你不允许自己示弱，掩埋了泪水与怀疑，在瞬息万变的花花世界中，你选择了坚持自我。</p><p>请相信自己，当你离开的那一天，人们或许会无限怀念起你——那个值得仰仗的英雄。</p>",
-		"resultImageUrl" : "results/17.png"
+		"resultImageUrl" : "result/17.png"
     }
 ]
