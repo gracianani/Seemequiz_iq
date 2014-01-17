@@ -35,12 +35,27 @@
             startQuizView = new StartQuizView();
             mainView = new MainView();
             questions = new Questions();
-            questions.fetch();
             results = new Results();
-            results.fetch();
             userAnswers = new UserAnswers();
             scorings = new Scorings();
+            
+            var self = this;
+            this.fetchSuccessCount = 0;
+            var fetchSuccessHandler = function(){
+                self.fetchSuccessCount ++;
+                if ( self.fetchSuccessCount == 3 ) {
+                    self.prepare();
+                }
+            };
+            questions.fetch({
+                success: fetchSuccessHandler
+            });
+            results.fetch({
+                success: fetchSuccessHandler
+            });
             scorings.fetch({
+                success: fetchSuccessHandler
+                /*
                 success: function () {
                     for (var resultId = 1; resultId < results.length + 1; resultId++) {
                         var score = 0;
@@ -51,7 +66,7 @@
                         );
                         console.log("result" + resultId + ",score" + score);
                     }
-                }
+                }*/
             });
 
         },
@@ -63,16 +78,15 @@
         },
 
         prepare: function () {
-            if (questions.length !== 0) {
-                clearTimeout(t);
-                startQuizView.ready();
-            }
+            startQuizView.ready();
         },
 
         index: function () {
             console.log("Welcome to your / route.");
             startQuizView.render();
-            t = setTimeout(this.prepare, 1000);
+            if ( ! (questions.isEmpty() || results.isEmpty() || scorings.isEmpty()) ) {
+                this.prepare();
+            }
         },
 
         startQuiz: function (questionId) {
@@ -82,12 +96,11 @@
             }
 
             if (inQuizView) {
-                quiz.resetQuiz(parseInt(questionId));
+                quiz.resetQuiz();
                 inQuizView.render();
                 return;
             }
             quiz = new Quiz({
-                currentQuestionId: parseInt(questionId),
                 questions: questions,
                 userAnswers: userAnswers
             });
@@ -96,7 +109,7 @@
 
         result: function () {
             if (userAnswers.length > 0) {
-                endQuizView = new EndQuizView({ model: new UserResult({ results: results }), scorings: scorings, userAnswers: userAnswers });
+                endQuizView = new EndQuizView({ model: new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers }) });
             } else {
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }

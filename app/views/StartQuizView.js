@@ -49,7 +49,7 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html", "anim
             },
 
             startQuiz: function () {
-                Backbone.history.navigate("question/1", { trigger: true, replace: true });
+                Backbone.history.navigate("question/2", { trigger: true, replace: true });
             }
 
         });

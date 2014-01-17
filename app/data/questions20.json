@@ -1,25 +1,11 @@
 ﻿[
 	{ 
-		"questionId" : 1,
-		"questionText" : "你希望自己能飞么？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "希望！"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "不希望，地上挺好。"
-			}
-		]
-	}, 
-	{ 
 		"questionId" : 2,
 		"questionText" : "你觉得披风帅气么？",
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "非常帅！"
+				"answerText" : "挺帅的！O(∩_∩)O"
 			},
 			{
 				"answerId" : 2,
@@ -50,24 +36,6 @@
 		]
 	}, 
 	{ 
-		"questionId" : 5,
-		"questionText" : "你的脾气好么？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "挺好的，我很随和。"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "我直来直往，快意恩仇。"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "不好，有时难以相处。"
-			}
-		]
-	}, 
-	{ 
 		"questionId" : 6,
 		"questionText" : "你是一个超级Geek么？",
 		"answers" : [
@@ -86,24 +54,6 @@
 			{
 				"answerId" : 4,
 				"answerText" : "Geek是啥?"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 7,
-		"questionText" : "你是不是经常出意外？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "经常，这个世界总是给我惊喜╮(╯▽╰)╭"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "有时，人在江湖漂难免挨几刀。"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "较少，我考虑得比较周道。"
 			}
 		]
 	}, 
@@ -130,34 +80,6 @@
 		]
 	}, 
 	{ 
-		"questionId" : 9,
-		"questionText" : "你的幽默感如何？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "比较幽默"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "没什么幽默感"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 11,
-		"questionText" : "你对童年的记忆是？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "幸福而快乐"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "有一些悲伤"
-			}
-		]
-	}, 
-	{ 
 		"questionId" : 13,
 		"questionText" : "你穿丁字裤吗？",
 		"answers" : [
@@ -171,13 +93,13 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "坚决不穿，看起来很不舒服！"
+				"answerText" : "坚决不穿，看起来很不舒服！(⊙o⊙)…"
 			}
 		]
 	}, 
 	{ 
 		"questionId" : 14,
-		"questionText" : "你留长发吗？",
+		"questionText" : "你是长发吗？",
 		"answers" : [
 			{
 				"answerId" : 1,
@@ -189,21 +111,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "一生只爱清爽短发"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 15,
-		"questionText" : "你对自己的身材满意吗？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "比较满意:)"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "不太满意，希望改变身材"
+				"answerText" : "就爱清爽短发"
 			}
 		]
 	}, 
@@ -240,68 +148,12 @@
 		]
 	}, 
 	{ 
-		"questionId" : 19,
-		"questionText" : "你是否善于察言观色？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "是的，我总是很懂别人"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不是，人心对我而言是个谜"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 20,
-		"questionText" : "你是否喜欢万众瞩目,在聚光灯下的感觉？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "是的，请叫我DIVA(天后)"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不是，我喜欢低调一些"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 22,
-		"questionText" : "你的运动神经好么？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "比较好，小脑杠杠的"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "比较差，运动无能"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 23,
-		"questionText" : "你是不是有点天真？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "是的"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不，我总是比较成熟"
-			}
-		]
-	}, 
-	{ 
 		"questionId" : 24,
 		"questionText" : "你是不是很容易发怒？",
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "是的，经常控制不住"
+				"answerText" : "是的，经常控制不住情绪"
 			},
 			{
 				"answerId" : 2,
@@ -309,21 +161,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "不，我几乎不生气"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 25,
-		"questionText" : "你是否总把自己隐藏得很深？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "对！深藏功与名"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不，我做任何事情都光明正大。"
+				"answerText" : "比较少生气，基本能控制住"
 			}
 		]
 	}, 
@@ -341,21 +179,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "必须的，交际花/小王子就是我"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 27,
-		"questionText" : "你会伤害别人，但是自己没有意识到么？",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "很可能会，经常好心办坏事"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "很少发生，我很在意别人感受"
+				"answerText" : "比较喜欢，交际花/小王子！"
 			}
 		]
 	}, 
@@ -410,24 +234,6 @@
 		]
 	}, 
 	{ 
-		"questionId" : 33,
-		"questionText" : "你是一个意志坚强的人么?",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "是的，钢铁就是这么炼成的！"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不是，我不想勉强自己"
-			},
-			{
-				"answerId" : 3,
-				"answerText" : "不好说，时而坚强时而脆弱"
-			}
-		]
-	}, 
-	{ 
 		"questionId" : 35,
 		"questionText" : "你是否偷过别人的东西?",
 		"answers" : [
@@ -455,7 +261,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "我是被打的那位"
+				"answerText" : "我是被打的那位~~~(>_<)~~~"
 			}
 		]
 	}, 
@@ -488,20 +294,6 @@
 			{
 				"answerId" : 3,
 				"answerText" : "不会，诚信很重要！"
-			}
-		]
-	}, 
-	{ 
-		"questionId" : 39,
-		"questionText" : "你喜欢坏男孩或坏女孩吗?",
-		"answers" : [
-			{
-				"answerId" : 1,
-				"answerText" : "喜欢:)"
-			},
-			{
-				"answerId" : 2,
-				"answerText" : "不喜欢，离我远点。"
 			}
 		]
 	}, 
@@ -541,7 +333,7 @@
 			},
 			{
 				"answerId" : 4,
-				"answerText" : "胖子算强壮么..."
+				"answerText" : "胖子算强壮么...o(╯□╰)o"
 			}
 		]
 	}, 

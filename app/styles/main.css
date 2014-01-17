@@ -277,6 +277,9 @@ h1 {
 #inGame-questionContainer {
     margin:10px 5%;
 }
+.question {
+    padding-bottom: 60px;
+}
 .question-title {
 	color: #FFF;
 	text-align: center;
@@ -509,7 +512,7 @@ body, html, #main,#stage,.scene {
     text-align: left;
 }
 .result-quickButton {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top:140px;
     left: 0;

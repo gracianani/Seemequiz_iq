@@ -1,61 +1,5 @@
 ﻿[
 	{
-		"#############################" : "问题1",
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 9,
-		"score" : 1
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 3,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 1,
-		"resultId" : 9,
-		"score" : 2
-	},
-	{
-		"questionId" : 1,
-		"answerId" : 3,
-		"resultId" : 11,
-		"score" : 1
-	},
-
-	{
 		"#############################" : "问题2",
 		"questionId" : 2,
 		"answerId" : 1,
@@ -281,118 +225,6 @@
 		"score" : 5
 	},
 	
-
-
-
-
-	{
-		"#####################################" : "问题5",
-		"questionId" : 5,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 4
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 3,
-		"resultId" : 5,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 5,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 3,
-		"resultId" : 7,
-		"score" : 3
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 8,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 4
-	},
-
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 12,
-		"score" : 1
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 3,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 5,
-		"answerId" : 2,
-		"resultId" : 16,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 5,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 2
-	},
-
-
 	{
 		"#####################################" : "问题6",
 		"questionId" : 6,
@@ -500,116 +332,6 @@
 		"resultId" : 17,
 		"score" : 1
 	},
-
-
-
-
-	{
-		"#####################################" : "问题7",
-		"questionId" : 7,
-		"answerId" : 3,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 2,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 3,
-		"resultId" : 3,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 5,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 3,
-		"resultId" : 6,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 7,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 11,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 12,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 2,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 5
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 3,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 7,
-		"answerId" : 3,
-		"resultId" : 17,
-		"score" : 2
-	},
-
 
 	{
 		"###################################" : "问题8",
@@ -722,182 +444,6 @@
 		"resultId" : 17,
 		"score" : 3
 	},
-
-
-
-
-	{
-		"###################################" : "问题9",
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 3
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 1
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 17,
-		"score" : 1
-	},
-	{
-		"questionId" : 9,
-		"answerId" : 3,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-
-
-
-	{
-		"###################################" : "问题11",
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 3
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 3
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 3,
-		"resultId" : 3,
-		"score" : 4
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 11,
-		"answerId" : 3,
-		"resultId" : 5,
-		"score" : 2
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 3,
-		"resultId" : 7,
-		"score" : 4
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 3,
-		"resultId" : 12,
-		"score" : 3
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 1
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 3,
-		"resultId" : 14,
-		"score" : 4
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 11,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 1
-	},
-
 
 	{
 		"###################################" : "问题13",
@@ -1111,111 +657,7 @@
 		"answerId" : 3,
 		"resultId" : 17,
 		"score" : 1
-	}
-	,
-
-	{
-		"###################################" : "问题15",
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 1
 	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 5,
-		"score" : 3
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 3,
-		"resultId" : 7,
-		"score" : 2
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 15,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 11,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 3
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 2,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 3,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 1
-	},
-	{
-		"questionId" : 15,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 1
-	}
-	,
-
 	{
 		"###################################" : "问题17",
 		"questionId" : 17,
@@ -1327,13 +769,7 @@
 	{
 		"###################################" : "问题18",
 		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 1,
-		"score" : 1
-	},
-	{
-		"questionId" : 18,
-		"answerId" : 2,
+		"answerId" : 3,
 		"resultId" : 2,
 		"score" : 1
 	},
@@ -1374,26 +810,6 @@
 		"resultId" : 8,
 		"score" : 1
 	},
-
-	{
-		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 1
-	},
 	{
 		"questionId" : 18,
 		"answerId" : 1,
@@ -1404,12 +820,6 @@
 		"questionId" : 18,
 		"answerId" : 1,
 		"resultId" : 13,
-		"score" : 1
-	},
-	{
-		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 14,
 		"score" : 1
 	},
 	{
@@ -1426,443 +836,10 @@
 	},
 	{
 		"questionId" : 18,
-		"answerId" : 2,
-		"resultId" : 17,
-		"score" : 1
-	},
-
-
-	{
-		"###################################" : "问题19",
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 2,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 5,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 2,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 19,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 1
-	},
-
-
-	{
-		"###################################" : "问题20",
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 2,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 5,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 20,
 		"answerId" : 1,
 		"resultId" : 10,
 		"score" : 1
 	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 1
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 12,
-		"score" : 1
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 2,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 20,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 2
-	},
-
-
-	{
-		"###################################" : "问题22",
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 4
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 5,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 2,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 3,
-		"resultId" : 15,
-		"score" : 5
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 22,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 2
-	},
-
-
-	{
-		"###################################" : "问题23",
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 1,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 4,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 5,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 12,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 23,
-		"answerId" : 2,
-		"resultId" : 17,
-		"score" : 1
-	},
-
 
 	{
 		"###################################" : "问题24",
@@ -1971,116 +948,6 @@
 		"score" : 2
 	}
 	,
-
-
-	{
-		"###################################" : "问题25",
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 3
-	},
-
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 5,
-		"score" : 1
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 1
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 25,
-		"answerId" : 2,
-		"resultId" : 17,
-		"score" : 2
-	}
-	,
-
 	{
 		"###################################" : "问题26",
 		"questionId" : 26,
@@ -2187,115 +1054,6 @@
 		"resultId" : 17,
 		"score" : 2
 	},
-
-
-	{
-		"###################################" : "问题27",
-		"questionId" : 27,
-		"answerId" : 3,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 2,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 3,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 5,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 1,
-		"resultId" : 7,
-		"score" : 3
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 1
-	},
-
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 1,
-		"resultId" : 11,
-		"score" : 3
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 12,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 13,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 2,
-		"resultId" : 16,
-		"score" : 1
-	},
-	{
-		"questionId" : 27,
-		"answerId" : 3,
-		"resultId" : 17,
-		"score" : 2
-	},
-
 
 	{
 		"###################################" : "问题29",
@@ -2620,115 +1378,6 @@
 		"resultId" : 17,
 		"score" : 2
 	},
-
-	{
-		"###################################" : "问题33",
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 2,
-		"score" : 1
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 33,
-		"answerId" : 3,
-		"resultId" : 5,
-		"score" : 1
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 33,
-		"answerId" : 3,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 11,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 3,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 2,
-		"resultId" : 15,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 33,
-		"answerId" : 1,
-		"resultId" : 17,
-		"score" : 2
-	},
-
-
 	{
 		"###################################" : "问题35",
 		"questionId" : 35,
@@ -2956,7 +1605,7 @@
 		"questionId" : 37,
 		"answerId" : 1,
 		"resultId" : 2,
-		"score" : 2
+		"score" : 4
 	},
 	{
 		"questionId" : 37,
@@ -2979,15 +1628,9 @@
 	},
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 1,
 		"resultId" : 6,
-		"score" : 1
-	},
-	{
-		"questionId" : 37,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
+		"score" : 2
 	},
 	{
 		"questionId" : 37,
@@ -2998,26 +1641,26 @@
 
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 3,
 		"resultId" : 9,
-		"score" : 2
+		"score" : 1
 	},
 
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 3,
 		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 37,
-		"answerId" : 2,
-		"resultId" : 11,
 		"score" : 1
 	},
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 1,
+		"resultId" : 11,
+		"score" : 4
+	},
+	{
+		"questionId" : 37,
+		"answerId" : 1,
 		"resultId" : 12,
 		"score" : 1
 	},
@@ -3025,19 +1668,13 @@
 		"questionId" : 37,
 		"answerId" : 3,
 		"resultId" : 13,
-		"score" : 1
+		"score" : 2
 	},
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 1,
 		"resultId" : 14,
-		"score" : 1
-	},
-	{
-		"questionId" : 37,
-		"answerId" : 2,
-		"resultId" : 15,
-		"score" : 1
+		"score" : 2
 	},
 	{
 		"questionId" : 37,
@@ -3047,7 +1684,7 @@
 	},
 	{
 		"questionId" : 37,
-		"answerId" : 2,
+		"answerId" : 1,
 		"resultId" : 17,
 		"score" : 1
 	},
@@ -3158,115 +1795,6 @@
 		"resultId" : 17,
 		"score" : 2
 	},
-
-
-	{
-		"###################################" : "问题39",
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 1,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 2,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 1,
-		"resultId" : 3,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 4,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 39,
-		"answerId" : 1,
-		"resultId" : 5,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 6,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 7,
-		"score" : 1
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 8,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 9,
-		"score" : 2
-	},
-
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 10,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 11,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 1,
-		"resultId" : 12,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 1,
-		"resultId" : 13,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 14,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 1,
-		"resultId" : 15,
-		"score" : 1
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 16,
-		"score" : 2
-	},
-	{
-		"questionId" : 39,
-		"answerId" : 2,
-		"resultId" : 17,
-		"score" : 2
-	},
-
 
 	{
 		"###################################" : "问题40",
@@ -3404,9 +1932,9 @@
 
 	{
 		"questionId" : 41,
-		"answerId" : 2,
+		"answerId" : 3,
 		"resultId" : 5,
-		"score" : 1
+		"score" : 2
 	},
 	{
 		"questionId" : 41,

@@ -6,7 +6,7 @@ define(["jquery", "backbone", "models/Question" ],
 
         var Questions = Backbone.Collection.extend({
 
-            url: "/app/data/questions.json",
+            url: "/app/data/questions20.json",
 
             model: Question
 

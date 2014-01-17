@@ -21,29 +21,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
 
                 this.listenTo(this, "render", this.postRender);
 
-                this.calculate();
-            },
-
-            calculate: function () {
-
-                var self = this;
-
-                this.userAnswers.each(function (userAnswer) {
-
-                    var results = self.scoringRepo.where(userAnswer.toJSON());
-                    results.filter(function (result) {
-                        if (typeof (result) != "undefined") {
-                            var resultId = result.get("resultId");
-                            var score = result.get("score");
-                            self.model.addScore(resultId, score);
-                        }
-                    });
-                });
-
-                this.model.set(
-                    this.model.getResult().toJSON()
-                );
-
+                this.model.calculate();
             },
 
             // View Event Handlers

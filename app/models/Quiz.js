@@ -13,6 +13,7 @@ define(["jquery", "backbone"],
                 this.userAnswers = options.userAnswers;
                 this.questions = options.questions;
                 this.currentQuestion = this.questions.first();
+                this.set("currentQuestionId" ,this.currentQuestion.get("questionId"));
                 this.currentIndex = 0;
             },
             currentQuestionNumber: function () {
@@ -73,7 +74,8 @@ define(["jquery", "backbone"],
             getQuestionsCount: function () {
                 return this.questions.size();
             },
-            resetQuiz: function (questionId) {
+            resetQuiz: function () {
+                var questionId = this.questions.first().get("questionId");
                 this.set("currentQuestionId", questionId);
                 this.currentIndex = this.questions.indexOf(this.questions.findWhere({ "questionId": questionId }));
                 this.set("progress", Math.floor(this.currentIndex / this.questions.size() * 100));
