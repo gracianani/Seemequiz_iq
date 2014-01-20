@@ -6,7 +6,7 @@ define(["jquery", "backbone", "models/Scoring"],
 
         var Scorings = Backbone.Collection.extend({
 
-            url: "/app/data/scorings20.json",
+            url: "/app/data/scorings.json",
 
             model: Scoring
         });

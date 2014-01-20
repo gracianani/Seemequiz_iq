@@ -19,7 +19,7 @@
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "非常帅！"
+				"answerText" : "挺帅的！O(∩_∩)O"
 			},
 			{
 				"answerId" : 2,
@@ -27,7 +27,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "蠢死了，打死我也不穿"
+				"answerText" : "蠢死了，打死我也不穿!"
 			}
 		]
 	}, 
@@ -103,7 +103,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "较少，我考虑得比较周道。"
+				"answerText" : "较少，我是个谨慎的人。"
 			}
 		]
 	}, 
@@ -171,7 +171,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "坚决不穿，看起来很不舒服！"
+				"answerText" : "坚决不穿，看起来很不舒服！(⊙o⊙)…"
 			}
 		]
 	}, 
@@ -189,7 +189,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "一生只爱清爽短发"
+				"answerText" : "比较喜欢短发"
 			}
 		]
 	}, 
@@ -301,7 +301,7 @@
 		"answers" : [
 			{
 				"answerId" : 1,
-				"answerText" : "是的，经常控制不住"
+				"answerText" : "是的，经常控制不住情绪"
 			},
 			{
 				"answerId" : 2,
@@ -309,7 +309,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "不，我几乎不生气"
+				"answerText" : "比较少发怒，基本能控制住"
 			}
 		]
 	}, 
@@ -341,7 +341,7 @@
 			},
 			{
 				"answerId" : 3,
-				"answerText" : "必须的，交际花/小王子就是我"
+				"answerText" : "比较喜欢，交际花/小王子就是我"
 			}
 		]
 	}, 
@@ -541,7 +541,7 @@
 			},
 			{
 				"answerId" : 4,
-				"answerText" : "胖子算强壮么..."
+				"answerText" : "胖子算强壮么...o(╯□╰)o"
 			}
 		]
 	}, 
