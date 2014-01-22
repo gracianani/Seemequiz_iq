@@ -14,21 +14,27 @@
   <!-- /build -->
    
 </head>
-<body ontouchstart="">
+<body ontouchstart="" class="wechat">
   <!-- Application container. -->
   <main role="main" id="main">
     <div id="stage"></div>
     <header id="topBar">
         <div class="container">
-            <h1><a id="logo"><img src="/app/img/logo.png" alt="Seemeloo" /></a>你是哪位超级英雄？</h1>
+            <h1><a id="logo"><img src="/app/img/logo.png" /></a>你是哪位超级英雄？</h1>
         </div>
         <div class="container hidden" id="topBar-text">
-            <a id="help-share" class="btn btn-blue btn-block"><i class="fa fa-share-square-o fa-fw"></i>分享到微信</a>
-            <a class="btn btn-green btn-block"><i class="fa fa-smile-o fa-fw"></i>更多西米测试</a>
+            <div class="showInWechat">
+                <a id="help-share" class="btn btn-blue btn-block"><i class="fa fa-share-square-o fa-fw"></i>分享到微信</a>
+                <a class="btn btn-green btn-block"><i class="fa fa-github-alt fa-fw"></i> 更多西米测试</a>
+            </div>
+            <div class="hideInWechat">
+                <p>请在微信中扫描这个二维码</p>
+                <img src="/app/img/qrcode.png" />
+            </div>
             <p class="btn-block"><i class="fa fa-hand-o-right fa-fw"></i>Seemeloo 版权所有</p>
         </div>
         <div id="topBar-help" class="hidden" data-entranceAnimation="slideInDown">
-            <a><i class="fa fa-question"></i></a>
+            <a><i class="fa fa-question fa-fw"></i></a>
         </div>
      </header>
 
@@ -41,6 +47,25 @@
         点击右上角的<img src="app/img/button-share.png" width="32px" height="25px" /><br />
         分享到微信好友，或朋友圈
     </div>
+  </div>
+  <div id="preloader">
+    <img src="/app/img/result/1.png" width="1" height="1" />
+    <img src="/app/img/result/2.png" width="1" height="1" />
+    <img src="/app/img/result/3.png" width="1" height="1" />
+    <img src="/app/img/result/4.png" width="1" height="1" />
+    <img src="/app/img/result/5.png" width="1" height="1" />
+    <img src="/app/img/result/6.png" width="1" height="1" />
+    <img src="/app/img/result/7.png" width="1" height="1" />
+    <img src="/app/img/result/8.png" width="1" height="1" />
+    <img src="/app/img/result/9.png" width="1" height="1" />
+    <img src="/app/img/result/10.png" width="1" height="1" />
+    <img src="/app/img/result/11.png" width="1" height="1" />
+    <img src="/app/img/result/12.png" width="1" height="1" />
+    <img src="/app/img/result/13.png" width="1" height="1" />
+    <img src="/app/img/result/14.png" width="1" height="1" />
+    <img src="/app/img/result/15.png" width="1" height="1" />
+    <img src="/app/img/result/16.png" width="1" height="1" />
+    <img src="/app/img/result/17.png" width="1" height="1" />
   </div>
   <!-- Application source. -->
   <!-- build:[src] /source.min.js -->

@@ -210,7 +210,7 @@ h1 {
 }
 .btn-block {
 	display: block;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 15px;
 }
 #start-cover {
@@ -265,7 +265,7 @@ h1 {
 	background: -moz-linear-gradient(left, #daa40e, #ffc832);
 	background: -ms-linear-gradient(left, #daa40e, #ffc832);
 	background: -o-linear-gradient(left, #daa40e, #ffc832);
-	background: linear-gradient(left, #daa40e, #ffc832);
+	background: linear-gradient(to right, #daa40e, #ffc832);
 }
 #inGame-progress-value {
 	color: #daa40e;
@@ -530,6 +530,34 @@ body, html, #main,#stage,.scene {
     left: 0;
     border-radius: 0 5px 5px 0;
     padding-left: 0;
+}
+
+.hideInWechat {
+    text-align: center;
+}
+.wechat .hideInWechat{
+    display: none!important;
+}
+.notWechat .showInWechat {
+    display: none;
+}
+#preloader {
+    position: absolute;
+    left:-9999px;
+    top:-9999px;
+}
+#preloader img {
+    display: block;
+}
+.fa-seemebear:before {
+    content: none;
+}
+.fa-seemebear {
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: 100% 90%;
+    height: 1.2857142857142858em;
+    position: relative;
+    top: 5px;
 }
 /* ==========================================================================
    Helper classes

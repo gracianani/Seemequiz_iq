@@ -11,6 +11,9 @@ define(["jquery", "backbone","animationscheduler"],
 
             // View constructor
             initialize: function (options) {
+                if ( this.is_weixin() ) {
+                    this.$el.removeClass('notWechat').addClass('wechat');
+                }
                 this.disableSelection();
                 this.helpButtonAnimationScheduler = new AnimationScheduler( this.$el.find("#topBar-help") );
                 this.helpButtonAnimationScheduler.animateIn();
@@ -70,9 +73,16 @@ define(["jquery", "backbone","animationscheduler"],
                     });
                 }
                 
+            },
+            is_weixin: function(){
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                    return true;
+                } else {
+                    return false;
+                }
             }
         });
-
         // Returns the View class
         return MainView;
     }
