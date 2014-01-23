@@ -19,6 +19,7 @@ require.config({
     "backbonetouch":"../vendor/backbone.touch",
     "animationscheduler":"../vendor/animationScheduler",
     "image": "../vendor/bower/requirejs-plugins/src/image",
+    "cipher": "../vendor/cipher"
   },
 
   shim: {
