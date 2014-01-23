@@ -231,7 +231,7 @@ h1 {
 	height: 100px;
 }
 
-#inGame-progressContainer {
+#inGame-progressContainer,#prepare-progressContainer {
 	position: relative;
 	background: rgba(0,0,0,0.3);
 	border-radius: 20px;
@@ -239,22 +239,28 @@ h1 {
 	padding: 0;
 	margin:65px 10px 0;
 }
-#inGame-progress-startIcon,#inGame-progress-endIcon {
+#prepare-progressContainer {
+    margin-top: 15px;
+}
+#inGame-progress-startIcon,#inGame-progress-endIcon,#prepare-progress-endIcon  {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 	top:-12px;
 }
+#prepare-progress-endIcon {
+    top: -20px;
+}
 #inGame-progress-startIcon {
 	left: -10px;
 }
-#inGame-progress-endIcon {
+#inGame-progress-endIcon,#prepare-progress-endIcon {
 	right: -10px;
 }
-#inGame-progress-bar,#inGame-progress-value {
+#inGame-progress-bar,#inGame-progress-value,#prepare-progress-bar,#prepare-progress-value {
 	position: absolute;
 }
-#inGame-progress-bar {
+#inGame-progress-bar,#prepare-progress-bar {
 	background: #daa40e;
 	width: 0%;
 	height: 14px;
@@ -267,12 +273,15 @@ h1 {
 	background: -o-linear-gradient(left, #daa40e, #ffc832);
 	background: linear-gradient(to right, #daa40e, #ffc832);
 }
-#inGame-progress-value {
+#inGame-progress-value,#prepare-progress-value {
 	color: #daa40e;
 	line-height: 20px;
 	width:100%;
 	text-align: center;
 	font-size: 12px;
+}
+#prepare-progress-value {
+    color: #FFF;
 }
 #inGame-questionContainer {
     margin:10px 5%;
@@ -444,6 +453,35 @@ h1 {
 .result-action {
     padding: 10px 10% 20px;
 }
+.result-more {
+    margin: 30px 10% 20px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50px 15px 15px 50px;
+    position: relative;
+    padding-left: 110px;
+}
+.result-more-title {
+    color: #8ecaff;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.result-more-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.result-more-name {
+    font-size: 24px;
+    line-height: 36px;
+}
+.result-more-score small {
+    color: #8ecaff;
+    font-size: 12px;
+}
 body, html, #main,#stage,.scene {
     height: 100%;
 }
@@ -559,6 +597,16 @@ body, html, #main,#stage,.scene {
     position: relative;
     top: 5px;
 }
+#scenePrepare {
+    padding-top: 60px;
+}
+.prepare-loadingText {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

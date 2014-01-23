@@ -44,30 +44,46 @@ define(["jquery", "backbone"],
                         }
                     });
                 });
+                
+                this.setResult();
 
-                this.set(
-                    this.getResult().toJSON()
-                );
 
             },
-            getResult: function () {
-
-                var resultScore = this.currentScore.max(
-                    function (userScore) {
-                        return userScore.get("score");
-                    });
-
-                var resultDetails = this.resultRepo.findWhere({ resultId: resultScore.get("resultId") }).clone();
-                
+            getResultDetailByResultId: function( resultId, resultScore ) {
+                var resultDetail = this.resultRepo.findWhere({ resultId:resultId }).clone();
                 var TotalScore = 0;
-                this.scoringRepo.where({ "resultId": resultScore.get("resultId") }).filter(
+                
+                this.scoringRepo.where({ "resultId": resultId }).filter(
                      function (result) {
                           TotalScore += result.get("score");
-                      }
-                );
-                resultDetails.set("score", Math.floor(resultScore.get("score") * 100 / TotalScore ));
+                });
+                
+                resultDetail.set("score", Math.floor(resultScore * 100 / TotalScore ));
+                
+                return resultDetail;
+            },
+            setResult: function () {
 
-                return resultDetails;
+                var sortedScore = this.currentScore.sortBy(
+                    function(userScore) {
+                        return userScore.get("score");
+                    }
+                );
+                
+                //get top 2 score
+                var highestScore = sortedScore.pop();
+                var secondHighestResult = sortedScore.pop();
+                
+                var highestDetail = this.getResultDetailByResultId( highestScore.get("resultId"), highestScore.get("score") );
+                var secondHighestDetail = this.getResultDetailByResultId( secondHighestResult.get("resultId"), secondHighestResult.get("score") );
+                
+                //merge results
+                highestDetail.set("secondResultId", secondHighestDetail.get("resultId"));
+                highestDetail.set("secondResultName", secondHighestDetail.get("resultName"));
+                highestDetail.set("secondResultImageUrl", secondHighestDetail.get("resultImageUrl"));
+                highestDetail.set("secondScore", secondHighestDetail.get("score"));
+                
+                this.set( highestDetail.toJSON() );
             }
 
         });

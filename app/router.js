@@ -13,6 +13,7 @@
 
     var InQuizView = require("views/InQuizView");
     var StartQuizView = require("views/StartQuizView");
+    var PrepareResultView = require("views/PrepareResultView");
     var EndQuizView = require("views/EndQuizView");
     var MainView = require("views/MainView");
 
@@ -24,6 +25,7 @@
 
     var inQuizView;
     var startQuizView;
+    var prepareResultView;
     var endQuizView;
     var mainView;
 
@@ -106,10 +108,12 @@
             });
             inQuizView = new InQuizView({ model: quiz });
         },
-
         result: function () {
             if (userAnswers.length > 0) {
-                endQuizView = new EndQuizView({ model: new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers }) });
+                var userResult = new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers });
+                prepareResultView = new PrepareResultView({ userResult: userResult });
+                endQuizView = new EndQuizView({ model: userResult, prepareResultView: prepareResultView});
+                
             } else {
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }

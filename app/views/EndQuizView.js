@@ -12,16 +12,13 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
             // View constructor
             initialize: function (options) {
 
-                this.scoringRepo = options.scorings;
-
-                this.userAnswers = options.userAnswers;
+                this.prepareResultView = options.prepareResultView;
 
                 // Calls the view's render method
-                this.listenTo(this.model, "change", this.render);
+                this.listenTo(this.prepareResultView, "prepareFinish", this.render);
 
                 this.listenTo(this, "render", this.postRender);
 
-                this.model.calculate();
             },
 
             // View Event Handlers
