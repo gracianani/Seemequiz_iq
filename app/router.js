@@ -4,6 +4,7 @@
     // External dependencies.
     var Backbone = require("backbone");
     var BackboneTouch = require("backbonetouch");
+    var Cipher = require("cipher");
     var Questions = require("collections/Questions");
     var UserAnswers = require("collections/UserAnswers");
     var Scorings = require("collections/Scorings");
@@ -38,12 +39,12 @@
             results = new Results();
             userAnswers = new UserAnswers();
             scorings = new Scorings();
-            
+
             var self = this;
             this.fetchSuccessCount = 0;
-            var fetchSuccessHandler = function(){
-                self.fetchSuccessCount ++;
-                if ( self.fetchSuccessCount == 3 ) {
+            var fetchSuccessHandler = function () {
+                self.fetchSuccessCount++;
+                if (self.fetchSuccessCount == 3) {
                     self.prepare();
                 }
             };
@@ -57,15 +58,15 @@
                 success: fetchSuccessHandler
                 /*
                 success: function () {
-                    for (var resultId = 1; resultId < results.length + 1; resultId++) {
-                        var score = 0;
-                        scorings.where({ "resultId": resultId }).filter(
-                            function (result) {
-                                score += result.get("score");
-                            }
-                        );
-                        console.log("result" + resultId + ",score" + score);
-                    }
+                for (var resultId = 1; resultId < results.length + 1; resultId++) {
+                var score = 0;
+                scorings.where({ "resultId": resultId }).filter(
+                function (result) {
+                score += result.get("score");
+                }
+                );
+                console.log("result" + resultId + ",score" + score);
+                }
                 }*/
             });
 
@@ -84,7 +85,7 @@
         index: function () {
             console.log("Welcome to your / route.");
             startQuizView.render();
-            if ( ! (questions.isEmpty() || results.isEmpty() || scorings.isEmpty()) ) {
+            if (!(questions.isEmpty() || results.isEmpty() || scorings.isEmpty())) {
                 this.prepare();
             }
         },
