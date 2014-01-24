@@ -75,9 +75,7 @@
                 var s = document.createElement('script');
                 s.type = 'text/javascript';
                 s.src = '//cdn.chitika.net/getads.js';
-                try { document.getElementsByTagName('head')[0].appendChild(s); } catch(e){
-                    self.$el.find("#prepare-ad").append(s.outerHTML); 
-                }
+                self.$el.find("#prepare-ad").append(s.outerHTML); 
 
                 
             }
