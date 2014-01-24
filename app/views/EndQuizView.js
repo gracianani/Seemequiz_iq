@@ -55,10 +55,12 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                     self.buttonAnimationScheduler.animateIn();
                 });
                 
-                var title = "万万没想到，我是传说中的" + this.model.get("resultName") + "！你也来测看看吧！";
+                var title = "超级英雄测试，我有" + this.model.get("score") + "%的嫌疑是" + this.model.get("resultName") + "！你敢试试么？";
                 $('title').text(title);
             },
             restartQuiz: function () {
+                var title = "你是电影里的哪位超级英雄? Heroes, assemble！【性格测试，准得没天理】";
+                $('title').text(title);
                 Backbone.history.navigate('', { trigger: true, replace: true });
             }
 

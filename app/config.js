@@ -18,7 +18,7 @@ require.config({
     "text": "../vendor/bower/text/text",
     "backbonetouch":"../vendor/backbone.touch",
     "animationscheduler":"../vendor/animationScheduler",
-    "image": "../vendor/bower/requirejs-plugins/src/image",
+    "image": "../vendor/image",
     "cipher": "../vendor/cipher"
   },
 

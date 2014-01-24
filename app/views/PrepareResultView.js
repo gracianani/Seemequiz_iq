@@ -1,6 +1,6 @@
-﻿define(["jquery", "backbone", "mustache", "text!templates/PrepareResult.html", "animationscheduler"],
+﻿define(["jquery", "backbone", "mustache", "text!templates/PrepareResult.html", "animationscheduler", "image"],
 
-    function ($, Backbone, Mustache, template, AnimationScheduler) {
+    function ($, Backbone, Mustache, template, AnimationScheduler, image) {
 
         var PrepareResultView = Backbone.View.extend({
             // The DOM Element associated with this view
@@ -47,8 +47,8 @@
                 });
             },
             prepareImages: function() {
-                var firstResultImg = "image!app/img/" + this.userResult.get("resultImageUrl");
-                var secondResultImg = "image!app/img/" + this.userResult.get("secondResultImageUrl");
+                var firstResultImg = "image!/app/img/" + this.userResult.get("resultImageUrl");
+                var secondResultImg = "image!/app/img/" + this.userResult.get("secondResultImageUrl");
                 var self = this;
                 require([firstResultImg, secondResultImg], function(first,second){
                     self.isPrepareFinished = true;
