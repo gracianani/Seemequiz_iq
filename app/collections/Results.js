@@ -6,7 +6,7 @@ define(["jquery", "backbone", "models/Result"],
 
         var Results = Backbone.Collection.extend({
 
-            url: "/app/data/results.json",
+            url: "app/data/results.json",
 
             model: Result
 

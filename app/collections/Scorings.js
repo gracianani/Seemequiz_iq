@@ -9,7 +9,7 @@ define(["jquery", "backbone", "models/Scoring"],
         var Scorings = Backbone.Collection.extend({
 
             url: function () {
-                return "/app/data/enciphered-scorings.json";
+                return "app/data/enciphered-scorings.json";
             },
 
             parse: function (response) {

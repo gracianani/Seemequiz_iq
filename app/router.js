@@ -58,18 +58,6 @@
             });
             scorings.fetch({
                 success: fetchSuccessHandler
-                /*
-                success: function () {
-                for (var resultId = 1; resultId < results.length + 1; resultId++) {
-                var score = 0;
-                scorings.where({ "resultId": resultId }).filter(
-                function (result) {
-                score += result.get("score");
-                }
-                );
-                console.log("result" + resultId + ",score" + score);
-                }
-                }*/
             });
 
         },
