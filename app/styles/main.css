@@ -268,6 +268,7 @@ h1 {
 	top:3px;
 	background: -webkit-gradient(linear, 0 0, 0 left, from(#daa40e), to(#ffc832));
 	background: -webkit-linear-gradient(left, #daa40e, #ffc832);
+	background-image: -webkit-linear-gradient(left, #daa40e, #ffc832);
 	background: -moz-linear-gradient(left, #daa40e, #ffc832);
 	background: -ms-linear-gradient(left, #daa40e, #ffc832);
 	background: -o-linear-gradient(left, #daa40e, #ffc832);
@@ -577,7 +578,7 @@ body, html, #main,#stage,.scene {
     display: none!important;
 }
 .notWechat .showInWechat {
-    display: none;
+    display: none!important;
 }
 #preloader {
     position: absolute;
@@ -605,7 +606,11 @@ body, html, #main,#stage,.scene {
     line-height: 20px;
     text-align: center;
 }
-
+#prepare-ad {
+    padding-top: 1em;
+    margin:0 auto;
+    text-align: center; 
+}
 
 /* ==========================================================================
    Helper classes

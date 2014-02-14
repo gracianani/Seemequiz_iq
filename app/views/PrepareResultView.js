@@ -64,20 +64,15 @@
             showAd: function() {
                 var self = this;
                 
-                if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; }
-                
-                var unit = {"publisher":"gracian_ani","width":300,"height":250,"sid":"Chitika Default","color_site_link":"0000CC","color_bg":"FFFFFF"};
-                
-                var placement_id = window.CHITIKA.units.length;
-                window.CHITIKA.units.push(unit);
-                
-                this.$el.find("#prepare-ad").html('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-                var s = document.createElement('script');
-                s.type = 'text/javascript';
-                s.src = '//cdn.chitika.net/getads.js';
-                self.$el.find("#prepare-ad").append(s.outerHTML); 
-
-                
+                this.$el.find("#prepare-ad").html('<a style="display:none!important" id="tanx-a-mm_43537958_5592453_17466966"></a>');
+                var tanx_s = document.createElement('script');
+                tanx_s.type = 'text/javascript';
+                tanx_s.charset = "gbk";
+                tanx_s.id = "tanx-s-mm_43537958_5592453_17466966";
+                tanx_s.async = true;
+                tanx_s.src = "http://p.tanx.com/ex?i=mm_43537958_5592453_17466966";
+                tanx_h = document.getElementsByTagName("head")[0];
+                if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
             }
         });
 

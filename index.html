@@ -4,34 +4,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
-  <title>你是电影里的哪位超级英雄? Heroes, assemble！【性格测试，准得没天理】</title>
+  <title>你是电影中的哪位超级英雄? Heroes, assemble！【西米测试，有爱的性格测试】</title>
   <!-- Application styles. -->
   <link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href="vendor/bower/font-awesome/css/font-awesome.css" rel="stylesheet">
   <!-- build:[href] styles.min.css -->
   <link rel="stylesheet" href="/app/styles/index.css">
   <!-- /build -->
   <link rel=”shortcut icon” href=”app/img/favicon.ico” type=”image/icon”>
   <link rel=”icon” href=”app/img/favicon.ico” type=”image/icon”>
 </head>
-<body ontouchstart="" class="wechat">
+<body ontouchstart="" class="notWechat" style='-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;'  unselectable='on' onselectstart='return false;'  onmousedown='return false;'>
   <!-- Application container. -->
   <main role="main" id="main">
     <div id="stage"></div>
     <header id="topBar">
         <div class="container">
-            <h1><a id="logo"><img src="app/img/logo.png" /></a>你是哪位超级英雄？</h1>
+            <h1><a id="logo"><img src="app/img/logo.png" /></a>你是哪位超级英雄?</h1>
         </div>
         <div class="container hidden" id="topBar-text">
             <div class="showInWechat">
-                <a id="help-share" class="btn btn-blue btn-block"><i class="fa fa-share-square-o fa-fw"></i>分享到微信</a>
-                <a  href="http://quiz.seemeloo.com/" class="btn btn-green btn-block"><i class="fa fa-github-alt fa-fw"></i> 更多西米测试</a>
+                <a id="help-share" class="btn btn-yellow btn-block"><i class="fa fa-share-square-o fa-fw"></i>微信分享</a>
+                <a  href="http://quiz.seemeloo.com/" class="btn btn-blue btn-block"><i class="fa fa-github-alt fa-fw"></i> 更多性格测试</a>
             </div>
-            <div class="hideInWechat">
-                <p>请在微信中扫描这个二维码</p>
-                <img src="app/img/qrcode.png" />
-            </div>
-            <p class="btn-block"><i class="fa fa-hand-o-right fa-fw"></i>Seemeloo 版权所有</p>
+            <p class="btn-block"><i class="fa fa-hand-o-right fa-fw"></i>微信号：Seemeloo<br />西米科技版权所有</p>
         </div>
         <div id="topBar-help" class="hidden" data-entranceAnimation="slideInDown">
             <a><i class="fa fa-question fa-fw"></i></a>

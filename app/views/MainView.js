@@ -76,7 +76,7 @@ define(["jquery", "backbone","animationscheduler"],
             },
             is_weixin: function(){
                 var ua = navigator.userAgent.toLowerCase();
-                if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                if(ua.match(/MicroMessenger/i)=="micromessenger" || ua.match(/IEMobile/i) ) {
                     return true;
                 } else {
                     return false;
