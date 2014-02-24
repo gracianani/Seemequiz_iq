@@ -1,0 +1,124 @@
+body {
+	background: #053d5e;
+	color: #FFF;
+}
+#topBar {
+	background: url(../img/topbg-teal.png) left top;
+	border-bottom: 3px solid #0e595e;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 37px;
+	margin: 5px 0;
+	padding:0;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000;
+}
+.btn {
+	box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+	
+}
+
+.btn-yellow {
+	color: #FFF;
+}
+
+.btn-red {
+    background: #29b787;
+}
+.btn-green {
+	background: #25b582;
+	color: #FFF;
+}
+.btn-blue {
+	background: #0b77d1;
+	color: #FFF;
+}
+#start-action.loading {
+	background: url(../img/loader.gif) no-repeat center center;
+}
+
+
+#inGame-progress-bar,#prepare-progress-bar {
+	background: #26b486;
+}
+#inGame-progress-value,#prepare-progress-value {
+	color: #f7f880;
+}
+#prepare-progress-value {
+    color: #FFF;
+}
+.question-title {
+	color: #FFF;
+	text-shadow: none;
+}
+
+.question-item {
+	background: #FFF;
+}
+
+.question-item:active {
+    background:#0e7ad4;
+	color: #FFF;
+
+}
+.question-item.selected{
+	background:#0e7ad4;
+	color: #FFF;
+}
+.question-item.selected .fa-square-o:before {
+    color: #fff;
+}
+#inGame-actionContainer {
+	background: #ae2d2d;
+	background: url(../img/topbg-teal.png) repeat-x left top;
+	border-top: 3px solid #5dbc9f;
+}
+#inGame-prev,#inGame-next {
+    color: #FFF;
+}
+
+.result-name {
+	color: #FFF;
+}
+
+.result-quote {
+    background-color: #FFF;
+    color: #333;
+}
+.result-score {
+    color: #FFF;
+    background: #c42d2d url(../img/topbg-teal.png);
+    box-shadow: 0 10px 0px rgba(0,0,0,0.3);
+}
+
+.result-quote .caret {
+    border-right-color: #FFF;
+}
+
+.result-name-title {
+    color: #22b684;
+}
+
+.result-more-title {
+    color: #22b684;
+}
+
+.result-more-name {
+    color: #FFF;
+}
+.result-more {
+    background-color: #042d43;
+}
+.result-more-score small {
+    color: #22b684;
+}
+
+#topBar-help {
+    color: #0e595e;
+	background: url(../img/topbadge.png) no-repeat center bottom;
+	background-size: 62px 66px;
+}
+

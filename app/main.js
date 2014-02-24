@@ -7,7 +7,7 @@ require(["config"], function () {
         // navigation from this instance.
         app.router = new Router();
 
-        Backbone.history.start({ pushState: true, root: app.root });
+        Backbone.history.start({ pushState: false, root: app.root });
 
     });
 });

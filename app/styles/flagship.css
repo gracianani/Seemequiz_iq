@@ -1,0 +1,130 @@
+body {
+	background: #ECF0F1;
+	color: #666;
+}
+#topBar {
+	background: url(../img/topbg-flagship.png) left top;
+	border-bottom: 3px solid #2980B9;
+}
+
+h1 {
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000;
+}
+
+.btn-yellow {
+	background: #2C3E53;
+	color: #FFF;
+}
+
+.btn-red {
+	background: #E74C3C;
+	color: #FFF;
+}
+.btn-green {
+	background: #c24848;
+	color: #FFF;
+}
+.btn-blue {
+	background: #2C3E50;
+	color: #FFF;
+}
+#start-action.loading {
+	background: url(../img/loader.gif) no-repeat center center;
+}
+
+
+#inGame-progress-bar,#prepare-progress-bar {
+	background: #3498DB;
+}
+#inGame-progress-value,#prepare-progress-value {
+	color: #2980B9;
+}
+#prepare-progress-value {
+    color: #FFF;
+}
+.question-title {
+	color: #2C3E53;
+	text-shadow: none;
+}
+
+.question-item {
+	background: #FFF;
+	color: #2C3E53;
+}
+.question-item:last-child {
+
+
+}
+.question-item:first-child {
+
+    
+}
+.question-item:active,.question-item.selected {
+    background:#E74C3C;
+	color: #FFF;
+}
+.question-item.selected .fa-square-o:before {
+    color: #fff;
+}
+#inGame-actionContainer {
+	background: #ae2d2d;
+	background: url(../img/topbg-flagship.png) repeat-x left top;
+	border-top: 3px solid #3498DB;
+}
+#inGame-prev,#inGame-next {
+    color: #FFF;
+}
+
+.result-name {
+	color: #E74C3C;
+	text-shadow: none;
+}
+
+.result-quote {
+    background-color: #FFF;
+    color: #666;
+}
+.result-score {
+    color: #FFF;
+    background: #c42d2d url(../img/topbg-flagship.png);
+    box-shadow: 0 10px 0px rgba(0,0,0,0.3);
+}
+
+.result-quote .caret {
+    border-right-color: #FFF;
+}
+.result-more {
+    background-color: #2C3E50;
+}
+.result-name-title {
+    color: #2980B9;
+}
+
+.result-more-title {
+    color: #FFF;
+    text-shadow: none;
+}
+
+.result-more-name {
+    color: #FFF;
+}
+.result-more-score {
+    color: #FFF;
+}
+.result-more-score small {
+    color: #FFF;
+}
+
+#topBar-help {
+    color: #FFF;
+	background: url(../img/topbadge-dark.png) no-repeat center bottom;
+	background-size: 62px 66px;
+}
+
+#inGame-progressContainer, #prepare-progressContainer {
+    background-color: #CACECF;
+}
+#topBar-text {
+    color: #FFF;
+}
