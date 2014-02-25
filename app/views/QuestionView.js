@@ -1,8 +1,8 @@
 ﻿// InQuizView.js
 // -------
-define(["jquery", "backbone", "mustache", "text!templates/Question.html", "animationscheduler"],
+define(["jquery", "backbone", "mustache", "text!templates/Question.html", "text!templates/ImageQuestion.html", "animationscheduler"],
 
-    function ($, Backbone, Mustache, template, AnimationScheduler) {
+    function ($, Backbone, Mustache, textTemplate, imageTemplate, AnimationScheduler) {
 
         var QuestionView = Backbone.View.extend({
 
@@ -26,8 +26,12 @@ define(["jquery", "backbone", "mustache", "text!templates/Question.html", "anima
             // Renders the view's template to the UI
             render: function () {
                 // Setting the view's template property using the Underscore template method
-                this.template = _.template(template, {});
-
+                if ( this.model.has("questionType") && this.model.get("questionType") == "image" ) {
+                    this.template = _.template(imageTemplate, {});
+                } else {
+                    this.template = _.template(textTemplate, {});
+                }
+                
                 // Dynamically updates the UI with the view's template
                 this.$el.html(Mustache.render(this.template, this.model.toJSON()));
 
@@ -37,7 +41,6 @@ define(["jquery", "backbone", "mustache", "text!templates/Question.html", "anima
                 return this;
 
             },
-
             onClickQuestionItem: function(e) {
                 this.$el.find(".question-item.selected").removeClass("selected");
                 $(e.target).addClass("selected");
