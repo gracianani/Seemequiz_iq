@@ -83,6 +83,9 @@ define(["jquery", "backbone"],
                 highestDetail.set("secondResultImageUrl", secondHighestDetail.get("resultImageUrl"));
                 highestDetail.set("secondScore", secondHighestDetail.get("score"));
                 
+                //convert highestResult score
+                highestDetail.set("score", Math.floor(highestDetail.get("score") * 0.3) + 70 );
+                
                 this.set( highestDetail.toJSON() );
             }
 

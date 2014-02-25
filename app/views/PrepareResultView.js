@@ -47,8 +47,8 @@
                 });
             },
             prepareImages: function() {
-                var firstResultImg = "image!/app/img/" + this.userResult.get("resultImageUrl");
-                var secondResultImg = "image!/app/img/" + this.userResult.get("secondResultImageUrl");
+                var firstResultImg = "image!app/img/" + this.userResult.get("resultImageUrl");
+                var secondResultImg = "image!app/img/" + this.userResult.get("secondResultImageUrl");
                 var self = this;
                 require([firstResultImg, secondResultImg], function(first,second){
                     self.isPrepareFinished = true;
@@ -58,21 +58,12 @@
             },
             onPrepareFinish: function() {
                 if ( this.isPrepareFinished && this.isTimeUp ) {
+                    $("#qadabra").addClass("hidden");     
                     this.trigger("prepareFinish");
                 }
             },
             showAd: function() {
-                var self = this;
-                
-                this.$el.find("#prepare-ad").html('<a style="display:none!important" id="tanx-a-mm_43537958_5592453_17466966"></a>');
-                var tanx_s = document.createElement('script');
-                tanx_s.type = 'text/javascript';
-                tanx_s.charset = "gbk";
-                tanx_s.id = "tanx-s-mm_43537958_5592453_17466966";
-                tanx_s.async = true;
-                tanx_s.src = "http://p.tanx.com/ex?i=mm_43537958_5592453_17466966";
-                tanx_h = document.getElementsByTagName("head")[0];
-                if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+                $("#qadabra").removeClass("hidden");
             }
         });
 

@@ -629,6 +629,13 @@ body, html, #main,#stage,.scene {
     max-height: 100%;
     overflow: hidden;
 }
+#qadabra {
+    width: 300px;
+    position: absolute;
+    margin-left: -150px;
+    top: 120px;
+    left: 50%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
