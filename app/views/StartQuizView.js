@@ -23,7 +23,6 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html", "anim
 
             // Renders the view's template to the UI
             render: function () {
-
                 // Setting the view's template property using the Underscore template method
                 this.template = _.template(template, {});
 

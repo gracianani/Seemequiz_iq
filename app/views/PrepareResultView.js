@@ -58,12 +58,11 @@
             },
             onPrepareFinish: function() {
                 if ( this.isPrepareFinished && this.isTimeUp ) {
-                    $("#qadabra").addClass("hidden");     
                     this.trigger("prepareFinish");
                 }
             },
             showAd: function() {
-                $("#qadabra").removeClass("hidden");
+
             }
         });
 

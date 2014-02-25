@@ -57,11 +57,39 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                 
                 var title = "我被发现有" + this.model.get("score") + "%的嫌疑是" + this.model.get("resultName") + "！你会是哪位超级英雄呢？";
                 $('title').text(title);
+                
+                this.showAd();
             },
             restartQuiz: function () {
+                $("#main").css("height","100%");
+                
                 var title = "你最像哪位超级英雄? Heroes, assemble！【性格测试】";
                 $('title').text(title);
                 Backbone.history.navigate('', { trigger: true, replace: true });
+            },
+            showAd: function() {
+                var self = this;
+                var placeHolder = this.$el.find("#endQuizAd");
+                var tanx_s = document.createElement('script');
+                tanx_s.src = 'http://ads1.qadabra.com/t?id=a02b6e08-e724-4844-af55-41aafb13965e&size=300x250';
+                tanx_s.type = 'text/javascript';
+
+                if (!document._write) document._write = document.write;
+                document.write = function (str) {
+                    if (str.indexOf("SCRIPT") >= 0) {
+                        var matches = str.match(/SRC=".+"/);
+                        for (var index = 0; index < matches.length; index++) {
+                            var src = matches[index].replace("SRC=\"", "").replace("\"", "");
+                            tanx_s.src = src;
+                            tanx_s.type = 'text/javascript';
+                            placeHolder.append(tanx_s);
+                        }
+                    }
+                    else {
+                        placeHolder.append(str)
+                    }
+                };
+                placeHolder.append(tanx_s);
             }
 
         });

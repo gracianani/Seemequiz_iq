@@ -610,9 +610,10 @@ body, html, #main,#stage,.scene {
     text-align: center;
 }
 #prepare-ad {
-    padding-top: 1em;
+    padding-top: 2em;
     margin:0 auto;
-    text-align: center; 
+    text-align: center;
+    width: 180px;
 }
 .imageQuestion-item {
     width: 28%;
@@ -629,12 +630,18 @@ body, html, #main,#stage,.scene {
     max-height: 100%;
     overflow: hidden;
 }
-#qadabra {
+#prepareAd {
     width: 300px;
     position: absolute;
     margin-left: -150px;
     top: 120px;
     left: 50%;
+}
+#endQuizAd {
+    width: 300px;
+    text-align: center;
+    margin:1em auto;
+    padding-bottom: 30px;
 }
 /* ==========================================================================
    Helper classes
