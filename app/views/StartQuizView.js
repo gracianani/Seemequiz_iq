@@ -12,6 +12,7 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html", "anim
             // View constructor
             initialize: function () {
                 this.listenTo(this, "render", this.postRender);
+                _hmt.push(['_trackPageview', '/start']);
             },
 
             // View Event Handlers

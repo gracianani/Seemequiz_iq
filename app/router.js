@@ -83,7 +83,7 @@
         index: function () {
             console.log("Welcome to your / route.");
             startQuizView.render();
-            if (!(questions.isEmpty() || results.isEmpty() || scorings.isEmpty())) {
+            if (!(questions.isEmpty() || results.isEmpty() || scorings.isEmpty() || !config.has("quizName"))) {
                 this.prepare();
             }
         },

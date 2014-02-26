@@ -18,6 +18,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                 this.listenTo(this.prepareResultView, "prepareFinish", this.render);
 
                 this.listenTo(this, "render", this.postRender);
+                _hmt.push(['_trackPageview', '/result']);
 
             },
 

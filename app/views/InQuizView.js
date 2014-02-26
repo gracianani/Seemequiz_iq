@@ -14,6 +14,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
 
                 this.listenTo(this.model, "change", this.onModelChange);
                 this.listenTo(this, "render", this.postRender);
+                _hmt.push(['_trackPageview', '/inQuiz']);
 
                 this.render();
             },

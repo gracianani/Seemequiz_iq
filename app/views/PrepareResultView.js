@@ -14,7 +14,7 @@
                 
                 this.listenTo(this.userResult, "change", this.prepareImages);
                 this.listenTo(this, "render", this.postRender);
-                
+                _hmt.push(['_trackPageview', '/prepare']);
                 this.render();
 
             },

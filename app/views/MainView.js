@@ -42,6 +42,7 @@ define(["jquery", "backbone","animationscheduler"],
             },
             showShareOverlay: function(){
                 this.$el.find("#shareOverlay").removeClass("hidden");
+                _hmt.push(['_trackEvent', 'share', 'click']);
             },
             disableSelection: function() {
                 this.$el.css({
