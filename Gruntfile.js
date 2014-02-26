@@ -104,8 +104,7 @@ module.exports = function(grunt) {
     copy: {
       release: {
         files: [
-          { src: ["app/**"], dest: "dist/" },
-          { src: "vendor/**", dest: "dist/" }
+          { src: ["app/**"], dest: "dist/" }
         ]
       }
     },

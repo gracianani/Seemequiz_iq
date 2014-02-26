@@ -11,6 +11,7 @@
     var Results = require("collections/Results");
     var UserResult = require("models/UserResult");
     var Quiz = require("models/Quiz");
+    var Config = require("models/Config");
 
     var InQuizView = require("views/InQuizView");
     var StartQuizView = require("views/StartQuizView");
@@ -23,6 +24,7 @@
     var results;
     var scorings;
     var quiz;
+    var config;
 
     var inQuizView;
     var startQuizView;
@@ -35,18 +37,20 @@
     module.exports = Backbone.Router.extend({
 
         initialize: function () {
-            startQuizView = new StartQuizView();
-            mainView = new MainView();
             questions = new Questions();
             results = new Results();
             userAnswers = new UserAnswers();
             scorings = new Scorings();
+            config = new Config();
 
+            startQuizView = new StartQuizView();
+            mainView = new MainView({ config:config });
+            
             var self = this;
             this.fetchSuccessCount = 0;
             var fetchSuccessHandler = function () {
                 self.fetchSuccessCount++;
-                if (self.fetchSuccessCount == 3) {
+                if (self.fetchSuccessCount == 4) {
                     self.prepare();
                 }
             };
@@ -57,6 +61,9 @@
                 success: fetchSuccessHandler
             });
             scorings.fetch({
+                success: fetchSuccessHandler
+            });
+            config.fetch({
                 success: fetchSuccessHandler
             });
 
@@ -70,6 +77,7 @@
 
         prepare: function () {
             startQuizView.ready();
+            mainView.onConfigFetched();
         },
 
         index: function () {
@@ -99,9 +107,9 @@
         },
         result: function () {
             if (userAnswers.length > 0) {
-                var userResult = new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers });
+                var userResult = new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers, config:config});
                 prepareResultView = new PrepareResultView({ userResult: userResult });
-                endQuizView = new EndQuizView({ model: userResult, prepareResultView: prepareResultView});
+                endQuizView = new EndQuizView({ model: userResult, prepareResultView: prepareResultView, config:config});
                 
             } else {
                 Backbone.history.navigate('', { trigger: true, replace: true });

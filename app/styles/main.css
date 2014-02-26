@@ -128,6 +128,7 @@ body {
     height: 200px;
     overflow: scroll;
     text-align: center;
+    color: #FFF;
 }
 .container {
 	margin: 0 10px;
@@ -220,7 +221,7 @@ h1 {
 	
 }
 #start-cover img {
-    max-height: 250px;
+    max-height: 200px;
 }
 #start-action {
 	width: 80%;
@@ -355,6 +356,7 @@ h1 {
 	background: url(../img/topbg.png) repeat-x left top;
 	z-index: 99;
 	border-top: 3px solid #e55454;
+	color: #FFF;
 }
 #inGame-prev,#inGame-next {
     display: block;
@@ -642,6 +644,30 @@ body, html, #main,#stage,.scene {
     text-align: center;
     margin:1em auto;
     padding-bottom: 30px;
+}
+#sceneStart {
+    padding-bottom: 40px;
+}
+.startWechat {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.result-recommend-title {
+    text-align: center;
+    margin: 0.5em 0 0;
+}
+.result-recommend {
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.result-recommend .result-more-title {
+    font-size: 16px;
+    padding-top: 25px;
+    padding-right: 10px;
 }
 /* ==========================================================================
    Helper classes

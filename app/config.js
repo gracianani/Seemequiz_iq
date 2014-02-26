@@ -3,23 +3,23 @@
 require.config({
   paths: {
     // Make vendor easier to access.
-    "vendor": "../vendor",
+    "vendor": "../../vendor",
 
     // Almond is used to lighten the output filesize.
-    "almond": "../vendor/bower/almond/almond",
+    "almond": "../../vendor/bower/almond/almond",
 
     // Opt for Lo-Dash Underscore compatibility build over Underscore.
-    "underscore": "../vendor/bower/lodash/dist/lodash.underscore",
+    "underscore": "../../vendor/bower/lodash/dist/lodash.underscore",
 
     // Map remaining vendor dependencies.
-    "jquery": "../vendor/bower/jquery/jquery",
-    "backbone": "../vendor/bower/backbone/backbone",
-    "mustache": '../vendor/bower/mustache/mustache',
-    "text": "../vendor/bower/text/text",
-    "backbonetouch":"../vendor/backbone.touch",
-    "animationscheduler":"../vendor/animationScheduler",
-    "image": "../vendor/image",
-    "cipher": "../vendor/cipher"
+    "jquery": "../../vendor/bower/jquery/jquery",
+    "backbone": "../../vendor/bower/backbone/backbone",
+    "mustache": '../../vendor/bower/mustache/mustache',
+    "text": "../../vendor/bower/text/text",
+    "backbonetouch":"../../vendor/backbone.touch",
+    "animationscheduler":"../../vendor/animationScheduler",
+    "image": "../../vendor/image",
+    "cipher": "../../vendor/cipher"
   },
 
   shim: {

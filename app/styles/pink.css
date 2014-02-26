@@ -91,6 +91,7 @@ h1 {
 
 .result-name {
 	color: #c12a2a;
+	text-shadow: none;
 }
 
 .result-quote {

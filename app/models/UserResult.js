@@ -17,6 +17,7 @@ define(["jquery", "backbone"],
                 this.resultRepo = options.results;
                 this.scoringRepo = options.scorings;
                 this.userAnswers = options.userAnswers;
+                this.config = options.config;
                 
                 var self = this;
                 this.resultText = "";
@@ -46,6 +47,9 @@ define(["jquery", "backbone"],
                 });
                 
                 this.setResult();
+                
+                //add config
+                this.set(this.config.toJSON());
 
 
             },

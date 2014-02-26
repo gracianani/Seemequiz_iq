@@ -1,0 +1,24 @@
+{
+    "quizName":"你最像哪位超级英雄?",
+    "defaultShareText": "你最像哪位超级英雄? Heroes, assemble！「西米测试」",
+
+    "resultGuideWord":"你可以保持沉默<br />但我们很有理由怀疑你是",
+    "scoreName":"嫌疑指数",
+    "secondGuideWord":"其他嫌疑身份",
+    "resultShareText": "我最像的超级英雄是",
+    "resutlShareTextEnd":"，你敢试试么？",
+    
+    "recommends":[
+    {
+        "quizUrl":"http://quiz.seemeloo.com/sushigirl",
+        "quizName":"哪位女老师是你心头所好？",
+        "quizImgUrl":"http://quiz.seemeloo.com/img/quiz2.png"
+    },
+    {
+        "quizUrl":"http://quiz.seemeloo.com/sushigirl",
+        "quizName":"四方魔法学院入学测试",
+        "quizImgUrl":"http://quiz.seemeloo.com/img/quiz3.png"
+    }
+    ]
+    
+}

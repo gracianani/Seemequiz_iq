@@ -55,7 +55,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                     self.buttonAnimationScheduler.animateIn();
                 });
                 
-                var title = "我被发现有" + this.model.get("score") + "%的嫌疑是" + this.model.get("resultName") + "！你会是哪位超级英雄呢？";
+                var title = this.model.get("resultShareText") + "—" + this.model.get("resultName") + ": 「" + this.model.get("resultShortDescription") + "」 " +this.model.get("scoreName") +this.model.get("score") + "," + this.model.get("resutlShareTextEnd");
                 $('title').text(title);
                 
                 this.showAd();
@@ -63,8 +63,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
             restartQuiz: function () {
                 $("#main").css("height","100%");
                 
-                var title = "你最像哪位超级英雄? Heroes, assemble！【性格测试】";
-                $('title').text(title);
+                $('title').text(this.model.get("defaultShareText"));
                 Backbone.history.navigate('', { trigger: true, replace: true });
             },
             showAd: function() {

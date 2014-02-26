@@ -14,9 +14,13 @@ define(["jquery", "backbone","animationscheduler"],
                 if ( this.is_weixin() ) {
                     this.$el.removeClass('notWechat').addClass('wechat');
                 }
+                this.config = options.config;
+                
                 this.disableSelection();
                 this.helpButtonAnimationScheduler = new AnimationScheduler( this.$el.find("#topBar-help") );
                 this.helpButtonAnimationScheduler.animateIn();
+                
+                
             },
 
             // View Event Handlers
@@ -81,6 +85,10 @@ define(["jquery", "backbone","animationscheduler"],
                 } else {
                     return false;
                 }
+            },
+            onConfigFetched: function(){
+                this.$el.find("#topBar h1 span").text(this.config.get("quizName"));
+                $('title').text(this.config.get("defaultShareText"));
             }
         });
         // Returns the View class

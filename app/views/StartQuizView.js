@@ -36,7 +36,7 @@ define(["jquery", "backbone", "mustache", "text!templates/StartQuiz.html", "anim
 
             },
             postRender: function() {
-                this.sceneAnimationScheduler = new AnimationScheduler(this.$el.find("#sceneStart"));
+                this.sceneAnimationScheduler = new AnimationScheduler(this.$el.find("#start-cover"));
                 this.buttonAnimationScheduler = new AnimationScheduler(this.$el.find("#start-startButton,#start-shareButton"), {"isSequential":true});
                 
                 this.sceneAnimationScheduler.animateIn();
