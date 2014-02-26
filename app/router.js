@@ -108,7 +108,7 @@
         result: function () {
             if (userAnswers.length > 0) {
                 var userResult = new UserResult({ results: results, scorings: scorings, userAnswers: userAnswers, config:config});
-                prepareResultView = new PrepareResultView({ userResult: userResult });
+                prepareResultView = new PrepareResultView({ model:config, userResult: userResult});
                 endQuizView = new EndQuizView({ model: userResult, prepareResultView: prepareResultView, config:config});
                 
             } else {

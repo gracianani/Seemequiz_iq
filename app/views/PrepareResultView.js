@@ -6,7 +6,7 @@
             // The DOM Element associated with this view
             el: "#stage",
             initialize: function (options) {
-                this.waitingTime = 5;
+                this.waitingTime = this.model.get("preparingTime");
                 this.isTimeUp = false;
                 this.isPrepareFinished = false;
                 
@@ -25,7 +25,7 @@
                 this.template = _.template(template, {});
 
                 // Dynamically updates the UI with the view's template
-                this.$el.html(Mustache.render(this.template));
+                this.$el.html(Mustache.render(this.template, this.model.toJSON()));
 
                 this.trigger("render");
 
@@ -41,7 +41,7 @@
                 
                 this.$el.find("#prepare-progress-bar").animate({
                     "width":"100%"
-                }, this.waitingTime * 1000, "swing", function(){
+                }, this.waitingTime, "swing", function(){
                     self.isTimeUp = true;
                     self.onPrepareFinish();
                 });

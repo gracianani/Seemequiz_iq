@@ -1,6 +1,9 @@
 {
     "quizName":"你最像哪位超级英雄?",
     "defaultShareText": "你最像哪位超级英雄? Heroes, assemble！「西米测试」",
+    
+    "preparingText":"露露正在计算结果中，请稍候",
+    "preparingTime":5000,
 
     "resultGuideWord":"你可以保持沉默<br />但我们很有理由怀疑你是",
     "scoreName":"嫌疑指数",
