@@ -26,7 +26,9 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
 
                 "click #inGame-next": "showNextQuestion",
 
-                "click .question-item": "onClickQuestionItem"
+                "click .question-item": "onClickQuestionItem",
+                
+                "click .question-item>img": "onClickQuestionItem"
 
             },
 
@@ -84,7 +86,8 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             },
 
             onClickQuestionItem: function (e) {
-
+                e.preventDefault();
+                e.stopPropagation();
                 this.model.processUserAnswer(parseInt(e.target.getAttribute("data-id")));
                 this.showNextQuestion();
             },
