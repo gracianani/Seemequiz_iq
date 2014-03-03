@@ -70,6 +70,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             },
 
             showNextQuestion: function () {
+                $('body').scrollTop(0);
                 if (!this.model.isLastQuestion()) {
                     this.model.goToNextQuestion();
                 }
