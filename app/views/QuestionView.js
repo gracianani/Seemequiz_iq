@@ -20,7 +20,8 @@ define(["jquery", "backbone", "mustache", "text!templates/Question.html", "text!
 
             // View Event Handlers
             events: {
-                "click .question-item" : "onClickQuestionItem"
+                "click .question-item" : "onClickQuestionItem",
+                "click .question-item>img": "onClickQuestionItem"
             },
 
             // Renders the view's template to the UI
@@ -42,6 +43,8 @@ define(["jquery", "backbone", "mustache", "text!templates/Question.html", "text!
 
             },
             onClickQuestionItem: function(e) {
+                e.preventDefault();
+                e.stopPropagation();
                 this.$el.find(".question-item.selected").removeClass("selected");
                 $(e.target).addClass("selected");
             },
