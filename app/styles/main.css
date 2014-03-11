@@ -621,18 +621,17 @@ body, html, #main,#stage,.scene {
     width: 180px;
 }
 .imageQuestion-item {
-    width: 30%;
+    width: 45%;
     padding: 5px 1% 10px 1%;
     margin: 0 1% 10px 0;
     text-indent: 0;
     float: left;
     display: inline-block;
-    height: 100px;
+    height: 150px;
     text-align: center;
 }
 .imageQuestion-item img{
     max-width: 100%;
-    max-height: 100%;
     overflow: hidden;
 }
 #prepareAd {

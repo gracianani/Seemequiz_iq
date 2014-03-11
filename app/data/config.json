@@ -1,15 +1,15 @@
 {
-    "quizName":"你最像哪位超级英雄?",
-    "defaultShareText": "你最像哪位超级英雄? Heroes, assemble！「西米测试」",
+    "quizName":"四方性格测试",
+    "defaultShareText": "四方性格测试「西米测试」",
     
     "preparingText":"露露正在计算结果中，请稍候",
     "preparingTime":5000,
 
-    "resultGuideWord":"你可以保持沉默<br />但我们很有理由怀疑你是",
-    "scoreName":"嫌疑指数",
-    "secondGuideWord":"其他嫌疑身份",
-    "resultShareText": "我最像的超级英雄是",
-    "resutlShareTextEnd":"，你敢试试么？",
+    "resultGuideWord":"拨开层层迷雾<br />你的性格其实是",
+    "scoreName":"相似指数",
+    "secondGuideWord":"其他性格特征",
+    "resultShareText": "我的四方性格是",
+    "resutlShareTextEnd":"，你也来试试吧",
     
     "recommends":[
     {
