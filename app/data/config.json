@@ -1,21 +1,21 @@
 {
     "quizName":"西米智商测试",
-    "defaultShareText": "智商测试「西米测试」",
+    "defaultShareText": "好玩的疯狂游戏又杀回来了！玩不玩的起？先测个智商再说！",
     
-    "preparingText":"露露正在计算结果中，请稍候",
+    "preparingText":"露露正在疯狂找钱...",
     "preparingTime":5000,
 
-    "resultGuideWord":"拨开层层迷雾<br />你的智商其实是",
+    "resultGuideWord":"闷声发大财<br />聪明能找钱，你属于",
     "scoreName":"属于",
     "secondGuideWord":"其他性格特征",
-    "resultShareText": "我的四方性格是",
-    "resutlShareTextEnd":"，你也来试试吧",
+    "resultShareText": "闷声发大财，聪明能找钱，本人在一次疯狂的智商测试中竟然被鉴定为",
+    "resutlShareTextEnd":"，你也来试试？",
     
     "recommends":[
     {
-        "quizUrl":"http://quiz.seemeloo.com/sushigirl",
-        "quizName":"四方魔法学院入学测试",
-        "quizImgUrl":"http://quiz.seemeloo.com/img/quiz3.png"
+        "quizUrl":"http://quiz.seemeloo.com/sifang/",
+        "quizName":"你的性格最像哪位互联网大佬？",
+        "quizImgUrl":"http://quiz.seemeloo.com/sifang/app/img/cover.png"
     }
     ]
     
