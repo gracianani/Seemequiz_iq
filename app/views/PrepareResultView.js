@@ -48,9 +48,8 @@
             },
             prepareImages: function() {
                 var firstResultImg = "image!app/img/" + this.userResult.get("resultImageUrl");
-                var secondResultImg = "image!app/img/" + this.userResult.get("secondResultImageUrl");
                 var self = this;
-                require([firstResultImg, secondResultImg], function(first,second){
+                require([firstResultImg], function(first){
                     self.isPrepareFinished = true;
                     self.onPrepareFinish();
                 });
@@ -62,7 +61,6 @@
                 }
             },
             showAd: function() {
-
             }
         });
 

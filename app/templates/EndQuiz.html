@@ -3,28 +3,19 @@
         {{{resultGuideWord}}}
     </section>
     <section class="result-name" data-entranceAnimation="flipInX">
-        {{resultName}} 
+        {{score}}
     </section>
     <section class="result-img">
         <img src="app/img/{{resultImageUrl}}"  data-entranceAnimation="flipInY" />
         <section class="result-score" data-entranceAnimation="flipInY">
             <div class="result-score-title">{{scoreName}}</div>
-            <div class="result-score-number">{{score}}<small>%</small></div>
+            <div class="result-score-number">{{resultName}}<small>型</small> </div>
         </section>
     </section>
     
     <section class="result-quote" data-entranceAnimation="flipInY" >
-        {{{resultShortDescription}}}
-        <div class="caret"></div>
-    </section>
-    <section class="result-more">
-        <img src="app/img/{{secondResultImageUrl}}"  class="result-more-img" />
-        <div class="result-more-title">{{secondGuideWord}}</div>
-        <div class="result-more-name">{{secondResultName}}</div>
-        <div class="result-more-score"><small>{{scoreName}}：</small>{{secondScore}}<small>%</small></div>
-    </section>
-    <section class="result-text">
         {{{resultLongDescription}}}
+        <div class="caret"></div>
     </section>
     <section class="result-action">
         <a id="result-share" class="btn btn-yellow btn-block"><i class="fa fa-share-square-o"></i> 微信分享</a>

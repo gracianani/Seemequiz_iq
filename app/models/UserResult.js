@@ -18,7 +18,7 @@ define(["jquery", "backbone"],
                 this.scoringRepo = options.scorings;
                 this.userAnswers = options.userAnswers;
                 this.config = options.config;
-                
+
                 var self = this;
                 this.resultText = "";
                 this.resultRepo.each(function (result) {
@@ -45,52 +45,55 @@ define(["jquery", "backbone"],
                         }
                     });
                 });
-                
+
                 this.setResult();
-                
+
                 //add config
                 this.set(this.config.toJSON());
 
 
             },
-            getResultDetailByResultId: function( resultId, resultScore ) {
-                var resultDetail = this.resultRepo.findWhere({ resultId:resultId }).clone();
+            getResultDetailByResultId: function (resultId, resultScore) {
+                var resultDetail = this.resultRepo.findWhere({ resultId: resultId }).clone();
                 var TotalScore = 0;
-                
+
                 this.scoringRepo.where({ "resultId": resultId }).filter(
                      function (result) {
-                          TotalScore += result.get("score");
-                });
-                
-                resultDetail.set("score", Math.floor(resultScore * 100 / TotalScore ));
-                
+                         TotalScore += result.get("score");
+                     });
+
+                resultDetail.set("score", resultScore);
+
                 return resultDetail;
             },
             setResult: function () {
 
                 var sortedScore = this.currentScore.sortBy(
-                    function(userScore) {
+                    function (userScore) {
                         return userScore.get("score");
                     }
                 );
-                
-                //get top 2 score
+
+                var resultId = 1;
                 var highestScore = sortedScore.pop();
-                var secondHighestResult = sortedScore.pop();
-                
-                var highestDetail = this.getResultDetailByResultId( highestScore.get("resultId"), highestScore.get("score") );
-                var secondHighestDetail = this.getResultDetailByResultId( secondHighestResult.get("resultId"), secondHighestResult.get("score") );
-                
-                //merge results
-                highestDetail.set("secondResultId", secondHighestDetail.get("resultId"));
-                highestDetail.set("secondResultName", secondHighestDetail.get("resultName"));
-                highestDetail.set("secondResultImageUrl", secondHighestDetail.get("resultImageUrl"));
-                highestDetail.set("secondScore", secondHighestDetail.get("score"));
-                
-                //convert highestResult score
-                highestDetail.set("score", Math.floor(highestDetail.get("score") * 0.3) + 70 );
-                
-                this.set( highestDetail.toJSON() );
+                var finalScore = highestScore.get("score");
+                if (finalScore <= 0 || isNaN(finalScore)) {
+                    resultId = 1;
+                }
+                else if (finalScore > 0 && finalScore <= 85) {
+                    resultId = 2;
+                }
+                else if (finalScore > 85 && finalScore <= 115) {
+                    resultId = 3;
+                }
+                else if (finalScore > 115 && finalScore <= 150) {
+                    resultId = 4;
+                }
+                else {
+                    resultId = 5;
+                }
+                var highestDetail = this.getResultDetailByResultId(resultId, finalScore);
+                this.set(highestDetail.toJSON());
             }
 
         });

@@ -27,7 +27,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                 "click #inGame-next": "showNextQuestion",
 
                 "click .question-item": "onClickQuestionItem",
-                
+
                 "click .question-item>img": "onClickQuestionItem"
 
             },
@@ -94,7 +94,9 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             },
 
             onQuestionAnimateComplete: function () {
-
+                if (this.model.isFirstQuestion()) {
+                    this.showAd();
+                }
             },
 
             onModelChange: function () {
@@ -105,7 +107,7 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
             },
 
             updateProgress: function () {
-                this.$el.find('#inGame-progress-value').html(this.model.currentQuestionNumber()  + ' / ' + this.model.getQuestionsCount());
+                this.$el.find('#inGame-progress-value').html(this.model.currentQuestionNumber() + ' / ' + this.model.getQuestionsCount());
                 this.$el.find('#inGame-progress-bar').animate({ 'width': this.model.get("progress") + '%' });
 
                 if (this.model.get("progress") > 45) {
@@ -144,6 +146,19 @@ define(["jquery", "backbone", "mustache", "text!templates/InQuiz.html", "animati
                     }
                 }
 
+            },
+            showAd: function () {
+                var self = this;
+                var placeHolder = this.$el.find("#in-quiz-ad");
+                var tanx_s = document.createElement("iframe");
+                tanx_s.src = 'http://ads1.qadabra.com/t?id=633be4fe-f580-410d-afe8-9cc64267bfd4&size=300x50&iframe=true';
+                tanx_s.marginWidth = "0";
+                tanx_s.marginHeight = "0";
+                tanx_s.frameBorder = "0";
+                tanx_s.width = '300';
+                tanx_s.height = '50';
+                tanx_s.scrolling = 'no';
+                placeHolder.html(tanx_s);
             }
         });
 

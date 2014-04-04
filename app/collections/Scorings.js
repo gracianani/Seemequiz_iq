@@ -13,7 +13,7 @@ define(["jquery", "backbone", "models/Scoring"],
             },
 
             parse: function (response) {
-                var deciphered = { stream: { value: response.a }, key: { value: 'houseofcards'} };
+                var deciphered = { stream: { value: response.a }, key: { value: 'IQ'} };
                 var parsed = decipher(deciphered);
                 return JSON.parse(deciphered.stream.value);
             },

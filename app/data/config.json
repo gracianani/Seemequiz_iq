@@ -1,22 +1,17 @@
 {
-    "quizName":"四方性格测试",
-    "defaultShareText": "四方性格测试「西米测试」",
+    "quizName":"西米智商测试",
+    "defaultShareText": "智商测试「西米测试」",
     
     "preparingText":"露露正在计算结果中，请稍候",
     "preparingTime":5000,
 
-    "resultGuideWord":"拨开层层迷雾<br />你的性格其实是",
-    "scoreName":"相似指数",
+    "resultGuideWord":"拨开层层迷雾<br />你的智商其实是",
+    "scoreName":"属于",
     "secondGuideWord":"其他性格特征",
     "resultShareText": "我的四方性格是",
     "resutlShareTextEnd":"，你也来试试吧",
     
     "recommends":[
-    {
-        "quizUrl":"http://quiz.seemeloo.com/sushigirl",
-        "quizName":"哪位女老师是你心头所好？",
-        "quizImgUrl":"http://quiz.seemeloo.com/img/quiz2.png"
-    },
     {
         "quizUrl":"http://quiz.seemeloo.com/sushigirl",
         "quizName":"四方魔法学院入学测试",

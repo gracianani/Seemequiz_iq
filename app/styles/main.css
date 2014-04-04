@@ -621,13 +621,12 @@ body, html, #main,#stage,.scene {
     width: 180px;
 }
 .imageQuestion-item {
-    width: 45%;
+    width: 22%;
     padding: 5px 1% 10px 1%;
     margin: 0 1% 10px 0;
     text-indent: 0;
     float: left;
     display: inline-block;
-    height: 150px;
     text-align: center;
 }
 .imageQuestion-item img{
@@ -670,6 +669,15 @@ body, html, #main,#stage,.scene {
     font-size: 16px;
     padding-top: 25px;
     padding-right: 10px;
+}
+/* ==========================================================================
+    Advertisement
+   ========================================================================== */
+#in-quiz-ad 
+{
+    padding-top: 2em;
+    margin: 0 auto;
+    text-align: center;
 }
 /* ==========================================================================
    Helper classes

@@ -55,19 +55,19 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                 this.stageAnimationScheduler.animateIn(function () {
                     self.buttonAnimationScheduler.animateIn();
                 });
-                
-                var title = this.model.get("resultShareText") + "—" + this.model.get("resultName") + ": 「" + this.model.get("resultShortDescription") + "」 " +this.model.get("scoreName") +this.model.get("score") + "," + this.model.get("resutlShareTextEnd");
+
+                var title = this.model.get("resultShareText") + "—" + this.model.get("resultName") + ": 「" + this.model.get("resultShortDescription") + "」 " + this.model.get("scoreName") + this.model.get("score") + "," + this.model.get("resutlShareTextEnd");
                 $('title').text(title);
-                
-                this.showAd();
+
+                this.showIframeAd();
             },
             restartQuiz: function () {
-                $("#main").css("height","100%");
-                
+                $("#main").css("height", "100%");
+
                 $('title').text(this.model.get("defaultShareText"));
                 Backbone.history.navigate('', { trigger: true, replace: true });
             },
-            showAd: function() {
+            showAd: function () {
                 var self = this;
                 var placeHolder = this.$el.find("#endQuizAd");
                 var tanx_s = document.createElement('script');
@@ -89,6 +89,19 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                         placeHolder.append(str)
                     }
                 };
+                placeHolder.append(tanx_s);
+            },
+            showIframeAd: function () {
+                var self = this;
+                var placeHolder = this.$el.find("#endQuizAd");
+                var tanx_s = document.createElement("iframe");
+                tanx_s.src = 'http://ads1.qadabra.com/t?id=633be4fe-f580-410d-afe8-9cc64267bfd4&size=300x250&iframe=true';
+                tanx_s.marginWidth = "0";
+                tanx_s.marginHeight = "0";
+                tanx_s.frameBorder = "0";
+                tanx_s.width = '300';
+                tanx_s.height = '250';
+                tanx_s.scrolling = 'no';
                 placeHolder.append(tanx_s);
             }
 
