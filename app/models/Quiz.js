@@ -1,8 +1,8 @@
 ﻿// Question.js
 
-define(["jquery", "backbone"],
+define(["jquery", "backbone", "collections/questions"],
 
-    function ($, Backbone) {
+    function ($, Backbone, Questions) {
 
         var Quiz = Backbone.Model.extend({
             defaults: {
@@ -11,10 +11,20 @@ define(["jquery", "backbone"],
             },
             initialize: function (options) {
                 this.userAnswers = options.userAnswers;
-                this.questions = options.questions;
+                
+                this.questionRepo = options.questions;
+                this.questions = new Questions();
+                this.questions.add( this.getRandomQuesitonFromRepo() );
+                
                 this.currentQuestion = this.questions.first();
                 this.set("currentQuestionId" ,this.currentQuestion.get("questionId"));
                 this.currentIndex = 0;
+            },
+            getRandomQuesitonFromRepo: function() {
+                var randomQuestionIndex = Math.floor((Math.random()* this.questionRepo.size()) + 1);
+                
+                return this.questionRepo.get(randomQuestionIndex);
+                
             },
             currentQuestionNumber: function () {
                 // current question number is current index + 1
@@ -75,6 +85,11 @@ define(["jquery", "backbone"],
                 return this.questions.size();
             },
             resetQuiz: function () {
+                this.questions.reset();
+                this.userAnswers.reset();
+                this.questions.add( this.getRandomQuesitonFromRepo() );
+                console.log(this.questions);
+                
                 var questionId = this.questions.first().get("questionId");
                 this.set("currentQuestionId", questionId);
                 this.currentIndex = this.questions.indexOf(this.questions.findWhere({ "questionId": questionId }));

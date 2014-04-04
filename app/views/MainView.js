@@ -30,7 +30,6 @@ define(["jquery", "backbone","animationscheduler"],
                 "click #start-shareButton":"showShareOverlay",
                 "click #result-share":"showShareOverlay",
                 "click #quick-share":"showShareOverlay",
-                "click #topBar-help":"toggleHelpPannel",
                 "click #help-share":"showShareOverlay"
             },
 
