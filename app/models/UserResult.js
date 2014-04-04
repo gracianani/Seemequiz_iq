@@ -80,16 +80,7 @@ define(["jquery", "backbone"],
                 if (finalScore <= 0 || isNaN(finalScore)) {
                     resultId = 1;
                 }
-                else if (finalScore > 0 && finalScore <= 85) {
-                    resultId = 2;
-                }
-                else if (finalScore > 85 && finalScore <= 115) {
-                    resultId = 3;
-                }
-                else if (finalScore > 115 && finalScore <= 150) {
-                    resultId = 4;
-                }
-                else {
+                else if (finalScore > 0 ) {
                     resultId = 5;
                 }
                 var highestDetail = this.getResultDetailByResultId(resultId, finalScore);

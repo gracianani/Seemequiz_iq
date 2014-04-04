@@ -56,7 +56,7 @@ define(["jquery", "backbone", "mustache", "text!templates/EndQuiz.html", "animat
                     self.buttonAnimationScheduler.animateIn();
                 });
 
-                var title = this.model.get("resultShareText") + "—" + this.model.get("resultName") + ": 「" + this.model.get("resultShortDescription") + "」 " + this.model.get("scoreName") + this.model.get("score") + "," + this.model.get("resutlShareTextEnd");
+                var title = this.model.get("resultShareText") + "—" + this.model.get("resultName") + "， " + this.model.get("resutlShareTextEnd");
                 $('title').text(title);
 
                 this.showIframeAd();
